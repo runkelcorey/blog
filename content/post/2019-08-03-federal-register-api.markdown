@@ -1,0 +1,34 @@
+---
+title: Federal Register API
+author: Corey Runkel
+date: '2019-08-03'
+slug: federal-register-api
+categories:
+  - R
+  - open data
+tags:
+  - government data
+  - API
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2019-08-03T22:29:51-04:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: ["project/open-data-package"]
+---
+
+## TL;DR
+I created an **R** client to fetch data from the Federal Register, replacing an R package that had not been updated for years. It was my first foray into APIs.
+
+## Overview
+The United States [Federal Register](https://www.federalregister.gov/) is the [slowly] clearing house for every revision to US administrative law, regulatory enforcement, and the more stupid forms of jockeying and horn-tooting by federal agencies. The website, charged with the supremely bureaucratic duty of pigeonholing and circumscribing every sort of <<event>> in Washington, is quite beautiful. Its ease, features, and appearance bear the marks of something that is truly for the public.
+
+To aid readers, [and the odd corporation trying to stay a step ahead of environmental regulations,] the Office of the Federal Register got a leg up from a developer who made an API client for R. Unfortunately,^[And quite ironically for an institution with steeped in such bureaucracy.] that client has been rendered useless by updates. In the name of openness digital and governmental, I set to work on a new API client that would:
+
+1. work
+2. teach me the fundamentals of APIs
+3. display some clever solutions

@@ -1,0 +1,25 @@
+---
+title: Measuring Up
+author: corey
+date: '2019-08-08'
+slug: measuring-up
+categories:
+  - fitness
+tags:
+  - exercise
+  - panopticism
+subtitle: "Plagiarized from all the stuff on my tongue's tip, earlier today"
+summary: 'Blood pressure is hydraulics, strength is mechanics, nutrition is combustion, limbs are levers, joints are ball-and-sockets.'
+authors: []
+lastmod: '2019-08-06T22:10:30-04:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+Thoughts of `gym` flood our nervous systems with dopamine, or adrenaline---or that other type of adrenaline that conveys horror from our brain's primitive parts. Our differing responses come themselves leaden with heaps of remembered and diligently soldered reactions of prior `gym` times. A friend today pulled apart the crunches, deadlifts, and Russian twists we do for skeleton/muscle/fluid maintenance and those same diabolical words that we do for their own sake^[Endorphins?]---for our own sake. He argued there is a way to live that precedes (logically, though there are hints of a state of nature--type chronology as well, but for exercise) the gym culture
+
+Mark Greif's "[Against Exercise](https://www.versobooks.com/blogs/3428-against-exercise-by-mark-greif)" read as one of those essays the world itself cribs from, without citing.

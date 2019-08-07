@@ -1,0 +1,18 @@
+# Theme metadata
+name = "eggshell"
+
+# Is theme light or dark?
+light = true
+
+# Primary
+primary = "#cc5858"
+
+# Menu
+menu_primary = "#e6e7eb"
+menu_text = "#300808"
+menu_text_active = "#cc5858"
+menu_title = "#2b2b2b"
+
+# Home sections
+home_section_odd = "rgb(255, 255, 255)"
+home_section_even = "rgb(247, 247, 247)"
