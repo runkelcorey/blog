@@ -24,7 +24,7 @@ interests:
 - Political economy
 - Spatial analysis
 - Justice
-- R
+- Open source
 
 education:
   courses:
@@ -60,6 +60,6 @@ email: ""
 user_groups: []
 ---
 
-Corey Runkel is a student at the University of Virginia and a Research Assistant at the Behavioral Research at Darden (BRAD) Lab. His head can only be described as a DMZ of rabbit holes, some of which---political economy and communication, for instance---he has not been able to clamber out of.
+Corey Runkel is a student at the University of Virginia and a research assistant studying transportation equity. His head can only be described as a DMZ of rabbit holes, some of which---political economy and communication, for instance---he has not been able to clamber out from.
 
 Corey uses this website to exercise his writing muscles, document his work, and spew the thoughts that occur to him while cooking pasta, climbing rocks, and distracting himself from whatever obstruse book is in his backpack.
