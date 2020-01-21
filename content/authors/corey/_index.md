@@ -14,8 +14,8 @@ role: Research Assistant
 
 # Organizations/Affiliations
 organizations:
-- name: Behavioral Research at Darden Lab
-  url: "https://www.darden.virginia.edu/brad-lab/"
+- name: UVA School of Architecture
+  url: "https://3c.virginia.edu/projects/29"
 
 # Short bio (displayed in user profile at end of posts)
 bio: I study places, people, what they want, and how they (don't) get it.
@@ -24,13 +24,11 @@ interests:
 - Political economy
 - Spatial analysis
 - Justice
-- Open source
 
 education:
   courses:
   - course: B.A. Political & Social Thought
     institution: University of Virginia
-    year: 2020
 
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/widgets/#icons

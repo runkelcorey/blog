@@ -28,7 +28,7 @@ After nearly a decade of editing and publishing, I have become very particular a
 * Punctuation sits outside of both single and double quotation marks, *unless* it also occurs within such quotations
 * When employing free indirect discourse it is appropriate to include a question mark without ending a sentence
 * The Oxford comma creates ambiguities while clearing up none; it is disallowed
-* Unless conflicting with the formatting of the <<original>> quotation, notes within quotations should only occur as such: "__[{note}]__"
-* Instead of double quotation marks, rarely used brackets in English (though often implemented in HTML), <<>>, denote terms that should be taken in another context, displacing quotation marks denoting distrust, sarcasm, or the inadequacy of language to convey full meanings
+* Unless conflicting with the formatting of the <original> quotation, notes within quotations should only occur as such: "__[{note}]__"
+* Instead of double quotation marks, rarely used tildes, ~, denote terms that should be taken in another context, displacing quotation marks denoting distrust, sarcasm, or the inadequacy of language to convey full meanings
 
 This blog was published on [Hugo](https://gohugo.io/) with [Blogdown](https://bookdown.org/yihui/blogdown/) for [R](https://www.r-project.org/). All three are fantastic. 

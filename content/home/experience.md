@@ -19,31 +19,44 @@ date_format = "Jan 2006"
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 [[experience]]
   title = "Research Assistant"
+  company = "UVA School of Architecture"
+  company_url = "https://3c.virginia.edu/projects/29"
+  location = "Charlottesville, VA"
+  date_start = "2019-09-01"
+  date_end = ""
+  description = """Formulate citizen engagement toolkit for municipal and regional planners.
+  
+* Interview residents and facilitate participatory mapping
+* Review literature on GIS, public health, and transit to improve healthcare equity for low-mobility individuals
+  """
+
+[[experience]]
+  title = "Research Assistant"
   company = "Behavioral Research at Darden Lab"
-  company_url = ""
+  company_url = "https://www.darden.virginia.edu/brad-lab"
   location = "Charlottesville, VA"
   date_start = "2018-03-01"
   date_end = ""
-  description = """Conducted behavioral studies alongside public policy, communication, and business faculty.
+  description = """Conduct behavioral studies alongside public policy, communication, and business faculty.
   
-* Edited study protocol
-* Qualitatively coded interview transcripts using computational text analysis
-* Supervised dozens of studies using range of equipment and ID techniques
+* Revise study protocol with faculty and external researchers
+* Qualitatively code interview transcripts using computational text analysis
+* Supervise RAs in dozens of studies using range of equipment and ID technique
   """
 
 [[experience]]
   title = "Economics Intern"
   company = "American Road & Transportation Builders Association"
-  company_url = ""
+  company_url = "https://www.artba.org/"
   location = "Washington, DC"
   date_start = "2019-05-16"
   date_end = "2019-08-15"
   description = """Researched transporation finance geography, road safety, and construction markets.
   
-* Enhanced political advocacy and election modeling with spatial analysis
-* Resumed duties of Research Economist, analyzing markets and legislation
-* Authored crash safety report leading to FHWA reporting reforms
-* Introduced SQL and APIs, stabilizing reproducibility over time and software
+* Pinpointed impact and electoral support of possible political advocacy with spatial analysis
+* Resumed duties of Research Economist, working with Economics team to analyze markets and legislation
+* Authored crash safety report analyzing discrepancies in federal fatality reporting data
+* Integrated SQL and APIs to existing work, stabilizing reproducibility over time and software
   """
   
 [[experience]]
