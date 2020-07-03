@@ -18,12 +18,24 @@ date_format = "Jan 2006"
 #   Leave `date_end` empty if it's your current employer.
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 [[experience]]
+  title = "Research Associate"
+  company = "Yale Program on Financial Stability"
+  company_url = "https://som.yale.edu/faculty-research-centers/centers-initiatives/program-on-financial-stability"
+  location = "New Haven, CT"
+  date_start = "2020-07-01"
+  date_end = ""
+  description = """Research interventions in financial crises by governments and private actors
+  
+* Follow financial regulatory news and report on updates relevant to systemic risk
+  """
+
+[[experience]]
   title = "Research Assistant"
   company = "UVA School of Architecture"
   company_url = "https://3c.virginia.edu/projects/29"
   location = "Charlottesville, VA"
   date_start = "2019-09-01"
-  date_end = ""
+  date_end = "2020-05-16"
   description = """Formulate citizen engagement toolkit for municipal and regional planners.
   
 * Interview residents and facilitate participatory mapping
@@ -36,7 +48,7 @@ date_format = "Jan 2006"
   company_url = "https://www.darden.virginia.edu/brad-lab"
   location = "Charlottesville, VA"
   date_start = "2018-03-01"
-  date_end = ""
+  date_end = "2020-05-16"
   description = """Conduct behavioral studies alongside public policy, communication, and business faculty.
   
 * Revise study protocol with faculty and external researchers

@@ -10,11 +10,11 @@ authors:
 superuser: true
 
 # Role/position
-role: Research Assistant
+role: Research Associate
 
 # Organizations/Affiliations
 organizations:
-- name: UVA School of Architecture
+- name: Yale Program on Financial Stability
   url: "https://3c.virginia.edu/projects/29"
 
 # Short bio (displayed in user profile at end of posts)
@@ -37,7 +37,7 @@ education:
 social:
 - icon: envelope
   icon_pack: fas
-  link: mailto:runkel@virginia.edu  # For a direct email link, use "mailto:runkel@virginia.edu".
+  link: mailto:corey.runke@yale.edu  # For a direct email link, use "mailto:corey.runkel@yale.edu".
 - icon: twitter
   icon_pack: fab
   link: https://twitter.com/platopasta
@@ -67,6 +67,6 @@ email: ""
 user_groups: []
 ---
 
-Corey Runkel is a student at the University of Virginia and a research assistant studying transportation equity. His head can only be described as a DMZ of rabbit holes, some of which---political economy and communication, for instance---he has not been able to clamber out from.
+Corey Runkel is a Research Associate at the Yale Program on Financial Stability. His head can only be described as a DMZ of rabbit holes, some of which---political economy and communication, for instance---he has not been able to clamber out from.
 
 Corey uses this website to exercise his writing muscles, document his work, and spew the thoughts that occur to him while cooking pasta, climbing rocks, and distracting himself from whatever obstruse book is in his backpack.
