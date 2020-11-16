@@ -21,7 +21,7 @@ image:
 projects: []
 ---
 
-**This post was [originally published](https://som.yale.edu/blog/federal-reserve-further-expands-access-to-municipal-liquidity-facility) on the YPFS Systemic Risk blog**
+**This post was originally [published](https://som.yale.edu/blog/federal-reserve-further-expands-access-to-municipal-liquidity-facility) on the YPFS Systemic Risk blog**
 
 On June 3, the Federal Reserve Board of Governors [unanimously approved](https://www.federalreserve.gov/aboutthefed/boardvotes.htm) a [second expansion](https://www.federalreserve.gov/newsevents/pressreleases/monetary20200603a.htm) of eligibility under its Municipal Liquidity Facility ([MLF](https://www.federalreserve.gov/monetarypolicy/muni.htm)). 
 

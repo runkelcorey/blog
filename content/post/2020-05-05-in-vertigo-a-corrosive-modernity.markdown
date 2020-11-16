@@ -23,6 +23,61 @@ image:
 projects: []
 ---
 
+>"[We see now that the abyss of history is deep enough to hold us all.](http://www.historyguide.org/europe/valery.html)"
+
+*Vertigo* places a thoroughly modern Scottie Ferguson^[Jimmy Stewart] within a thoroughly modern San Francisco.
+It then watches as he slips from his mental moorings into a twisted version of himself.
+His cycle of psychological terror constitutes a violent *displacement*, and it re-opens two key questions of belonging: of Scottie to San Francisco; and of San Francisco to Scottie.
+I will examine only the former today; the latter I leave for later.
+
+My argument runs like this:
+*Vertigo*'s early scenes depict a San Francisco that is tailored to mobile white men like Scottie.
+For his part, Scottie enforced the modern status quo as a San Francisco cop, until his partner died trying to save Scottie from falling during a rooftop chase.
+With the danger supposedly over, he finds himself navigating a comfortable and controlled city, with sights/sites located just off the highway---Fort XX, the Muir Woods, and the Mission San Juan Bautista.
+
+But these parks did not just happen.
+Public works efforts had to make the sites palettable to professionals and tourists.
+These efforts had to isolate the visual cues of danger from any actual, Wild West--type danger.
+Rather than places to be reckoned with, these are sights to be gawked at.
+In the first formulation, the site---with all its natural and political forces---participates with those who visit it; in the second, only the visitor is active, while the sight is frozen in space.
+
+*Vertigo* exposes how thin this veneer of safety is.
+Between Madeleine's actions and Scottie's vertigo, the film reintroduces the distinct possibilities of danger to these places.
+In doing so, it unsettles the stable relationship between Scottie the subject and San Francisco the object.
+
+I contend that a stable subject-object relationship is necessary to Scottie's sense of place; as evidence, I look to his meeting with Gavin Elster.
+#Elster meeting exposes Scottie's desires
+##Scottie kind of had this with the police force, but he has been neutered and immobilized (the placement)
+##Also exposes what SF lacks
+#He likes going to these "old places" b/c he feels powerful and free there, his very life in defiance of the tall trees, colonial forces, and rough seas
+##these parks serve as reminders of the passage of time, but they are as much participants in it
+##so, unbeknownst to Scottie, the parks lost their oldness. Therefore, the power he feels is invalid
+#Madeleine exposes real danger
+##This unsettles the relationship, because he now feels the danger
+##this change makes it such that he can confuse now with the past
+##this flattening of history disorients scottie
+
+----------
+This is a private reading of *Vertigo*.
+To
+
+By disrupting the normal order of things, *Vertigo* thus undermines our () grip of America over San Francisco, and, in doing so, its narrative of progress.
+This disruption contributes to a "weakening of historicity, both in our relationship to public History and in the new forms of our private temporality".^[Frederic Jameson, [*The Cultural Logic of Late Capitalism*](https://web.archive.org/web/20110806060217/http://homepage.newschool.edu/~quigleyt/vcs/jameson/jameson.html)
+Here 'historcity' is that sense that things have changed somehow in our social relations.
+By exposing progress as a veneer, Hitchock traps us in a spiral that mirrors Scottie Ferguson's own difficulty escaping his traumatic past.
+
+
+## Establishing a modern city via the American sublime
+(the flâneur, Gavin Elster)? american tech sublime and the double action
+## Disrupting the illusion of safety
+Definitely something here about the fragility of the sublime
+Madeleine puncturing the visual membrane of the sublime
+
+
+The sublime, rather than an instrument which rattles people from their parochial understandings of history to glean a new future, turns them toward a never-ending past.
+
+*Vertigo* is often viewed as the modernist movie. Here instead it is an early example of postmodernism.
+
 Many of *Vertigo*'s lasting images star San Francisco as much as they do Jimmy Stewart or Kim Novak.
 Consider for example the massive pylons supporting the Golden Gate Bridge, the looming trunks of Muir Woods, or the towering figure cut by the Mission San Juan Bautista.
 These are objects so huge that Hitchcock's camera cannot swallow them entirely, their vastness bleeding over the frame's edges.
@@ -31,7 +86,7 @@ And each of them repeat vertical features---the [International Orange](https://e
 "Succession and uniformity of parts are what constitute the artificial infinite" wrote Edmund Burke in *A Philosophical Enquiry Into the Origin of Our Ideas of the Sublime and Beautiful*, one of the first modern explorations of the sublime.
 He described the sublime as a state when "the mind is so entirely filled with its object, that it cannot entertain any other," inciting terror and astonishment at its heights, while "the inferior effects are admiration, reverence and respect."
 The treatment Hitchcock gives to San Francisco's iconic sights meets Burke's standard.
-But what purpose does this treatment serve? How does the voyeurism of Hitchcock's camera change the meaning of these vistas?
+But what purpose does this treatment serve? How does the voyeurism of Hitchcock's camera change the meaning of these vistas? <---is this a question for the other post
 
 These images represent a particular kind of sublime associated with a particular kind of political project.
 While great magnitude and manifold features are part of Burke's sublime, he later disavows "colonnades and avenues of trees [...] suffered to run to immense distances" as urbane.
@@ -65,7 +120,8 @@ Meanwhile, the comfort provided by the innovative architecture undoubtedly impro
 By including men and women, the bra is thus a factor of the democratic virtues of the American technological sublime outlined by David Nye.
 But it is also a product of that historical concept, designed by an engineer in his spare time, a "kind of do-it-yourself thing," as Scottie notes.
 This spirit of tinkering that came from outside the state apparatus and wealthy class is the reason why "Engineers, builders, and inventors began to occupy [...] the pantheon of republicanism."^[David Nye, "The American Sublime" in *American Technological Sublime*.]
-The bra (by its inventor, its target audience, its cantilever design) symbolizes how America's middle class was catered by invention, innovation, and ambitious construction, criteria of the American sublime that would have been alien to a pre-modern San Francisco.
+The bra (by its inventor, its target audience, its cantilever design) symbolizes how invention, innovation, and ambitious construction catered to America's middle class.
+These criteria of the American sublime would have been alien to a pre-modern San Francisco.
 
 However, the above is but the first move in Nye's distinctive double action of the American sublime.
 Where that first move "usurped the place of natural things with man-made objects” conceived as "internal improvements”, the second move covered the tracks of the first, assimilating the object of improvement as once again natural.
