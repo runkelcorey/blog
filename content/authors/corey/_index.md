@@ -15,7 +15,7 @@ role: Research Associate
 # Organizations/Affiliations
 organizations:
 - name: Yale Program on Financial Stability
-  url: "https://3c.virginia.edu/projects/29"
+  url: "https://som.yale.edu/faculty-research-centers/centers-initiatives/program-on-financial-stability"
 
 # Short bio (displayed in user profile at end of posts)
 bio: I study places, people, what they want, and how they (don't) get it.
@@ -23,7 +23,8 @@ bio: I study places, people, what they want, and how they (don't) get it.
 interests:
 - Political economy
 - Spatial analysis
-- Justice
+- Open-source
+- Economic justice
 
 education:
   courses:
@@ -37,7 +38,7 @@ education:
 social:
 - icon: envelope
   icon_pack: fas
-  link: mailto:corey.runke@yale.edu  # For a direct email link, use "mailto:corey.runkel@yale.edu".
+  link: mailto:corey.runkel@yale.edu  # For a direct email link, use "mailto:corey.runkel@yale.edu".
 - icon: twitter
   icon_pack: fab
   link: https://twitter.com/platopasta
@@ -47,12 +48,12 @@ social:
 - icon: keybase
   icon_pack: fab
   link: https://keybase.io/platopasta
-- icon: orcid
-  icon_pack: ai
-  link: https://orcid.org/0000-0001-8992-4434
-#- icon: zotero
+#- icon: orcid
 #  icon_pack: ai
-#  link: https://www.zotero.org/runkelcorey/
+#  link: https://orcid.org/0000-0001-8992-4434
+- icon: zotero
+  icon_pack: ai
+  link: https://www.zotero.org/runkelcorey/
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.  
 - icon: cv
@@ -67,6 +68,7 @@ email: ""
 user_groups: []
 ---
 
-Corey Runkel is a Research Associate at the Yale Program on Financial Stability. His head can only be described as a DMZ of rabbit holes, some of which---political economy and communication, for instance---he has not been able to clamber out from.
+Corey Runkel is a Research Associate at the Yale Program on Financial Stability and Tobin Center Pre-Doctoral Fellow.
+He's interested in everything under the sun, though some things under the sun---political economy, payments systems, communication, to name a few---have held his interest longer.
 
-Corey uses this website to exercise his writing muscles, document his work, and spew the thoughts that occur to him while cooking pasta, climbing rocks, and distracting himself from whatever obstruse book is in his backpack.
+Corey uses this website to exercise his writing muscles, document his work, and spew the thoughts that occur to him while cooking pasta, climbing rocks, and riding his bike.

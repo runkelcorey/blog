@@ -5,7 +5,7 @@ headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
 weight = 65  # Order that this section will appear.
 
-title = "Where"
+title = "Experience"
 subtitle = ""
 
 # Date format for experience
@@ -22,11 +22,15 @@ date_format = "Jan 2006"
   company = "Yale Program on Financial Stability"
   company_url = "https://som.yale.edu/faculty-research-centers/centers-initiatives/program-on-financial-stability"
   location = "New Haven, CT"
-  date_start = "2020-07-01"
+  date_start = "2020-05-29"
   date_end = ""
   description = """Research interventions in financial crises by governments and private actors
   
-* Follow financial regulatory news and report on updates relevant to systemic risk
+* Review primary source documents from crisis-era programs in the United States and abroad
+* Author case studies documenting the design and implementation of programs distributing benefits to individuals and recovering toxic assets
+* Gather coworker feedback and implement productivity reforms across office
+* Tobin Center Pre-Doctoral Fellow
+
   """
 
 [[experience]]
@@ -66,7 +70,7 @@ date_format = "Jan 2006"
   description = """Researched transporation finance geography, road safety, and construction markets.
   
 * Pinpointed impact and electoral support of possible political advocacy with spatial analysis
-* Resumed duties of Research Economist, working with Economics team to analyze markets and legislation
+* Resumed some duties of Research Economist, working with Economics team to analyze markets and legislation
 * Authored crash safety report analyzing discrepancies in federal fatality reporting data
 * Integrated SQL and APIs to existing work, stabilizing reproducibility over time and software
   """
