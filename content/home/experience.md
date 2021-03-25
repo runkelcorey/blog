@@ -3,7 +3,7 @@
 widget = "experience"  # See https://sourcethemes.com/academic/docs/page-builder/
 headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
-weight = 65  # Order that this section will appear.
+weight = 50  # Order that this section will appear.
 
 title = "Experience"
 subtitle = ""
@@ -26,9 +26,10 @@ date_format = "Jan 2006"
   date_end = ""
   description = """Research interventions in financial crises by governments and private actors
   
-* Review primary source documents from crisis-era programs in the United States and abroad
-* Author case studies documenting the design and implementation of programs distributing benefits to individuals and recovering toxic assets
-* Gather coworker feedback and implement productivity reforms across office
+* Research and author case studies of regulatory and fiscal interventions to combat financial crises
+* Track new measures to counter COVID-related financial and economic distress
+* Develop and maintain lab-wide software for data collection and publishing
+* Visualize financial market and banking data
 * Tobin Center Pre-Doctoral Fellow
 
   """

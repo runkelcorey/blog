@@ -18,7 +18,7 @@ organizations:
   url: "https://som.yale.edu/faculty-research-centers/centers-initiatives/program-on-financial-stability"
 
 # Short bio (displayed in user profile at end of posts)
-bio: I study places, people, what they want, and how they (don't) get it.
+bio: Financial crisis researcher based in New Haven, CT.
 
 interests:
 - Political economy
@@ -28,7 +28,7 @@ interests:
 
 education:
   courses:
-  - course: B.A. Political & Social Thought
+  - course: Economics / Political & Social Thought
     institution: University of Virginia
 
 # Social/Academic Networking
@@ -69,6 +69,6 @@ user_groups: []
 ---
 
 Corey Runkel is a Research Associate at the Yale Program on Financial Stability and Tobin Center Pre-Doctoral Fellow.
-He's interested in everything under the sun, though some things under the sun---political economy, payments systems, communication, to name a few---have held his interest longer.
+He's interested in innovative infrastructure, payments systems, and economic justice, among other things.
 
-Corey uses this website to exercise his writing muscles, document his work, and spew the thoughts that occur to him while cooking pasta, climbing rocks, and riding his bike.
+Corey uses this website to exercise his writing muscles, document his work, and spill the thoughts that occur to him while cooking pasta, climbing rocks, and riding [his bike](https://photos.app.goo.gl/JDXB11u9a1XiZk23A).
