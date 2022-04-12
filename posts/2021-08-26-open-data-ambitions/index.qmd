@@ -1,0 +1,33 @@
+---
+title: Open Data Ambitions
+author: corey
+date: '2021-08-26'
+categories:
+  - open data
+  - R
+  - YPFS
+---
+
+I'm starting [another](2019/08/03/federal-register-api/) Federal Register API client for R.
+The reason is the same: the old [`federalregister`](https://github.com/rOpenGov/federalregister/) package does not use the current RESTful API.
+Clearly, my last attempt failed to fix that issue.
+It was my first experience with APIs and I didn't think to check if anyone had written any kind of best practices for developing API clients in R.
+Naturally, Hadley Wickham [had](https://cran.r-project.org/web/packages/httr/vignettes/api-packages.html).
+
+So this time, I'm taking a swing at a tidy `httr` client.
+And it won't be my last.
+I'm joining the `rOpenGov` organization to give myself some people I don't want to let down.
+First up is the Federal Register API, but I have ambitions for two more:
+
+* [Valet](https://www.bankofcanada.ca/valet/docs), the Bank of Canada's API
+* [eCFR](https://ecfr.federalregister.gov/developers/documentation/api/v1), which records US statutes^[The Federal Register is to eCFR as velocity is to position]
+
+I also aim to write some more Zotero translators.
+This could include the Federal Register and eCFR, but also Canada's parliamentary transcripts, and improving the existing translator for EUR-Lex.
+
+These are two big gaps in R client coverage.
+They're especially gaping for researchers in my current field, financial crises.
+Part of the YPFS' goal is to make nitty-gritty legal and government docs more accessible, and it seems to me that should extend to data.
+I've already published cleaned data on the Bank of Greece's balance sheet, and am working on joining the US' Term Auction Facility operations into something beautiful.
+These have been scraping jobs---one-offs, even if they are rather important datasets.
+A prior step is to make what's already available accessible.

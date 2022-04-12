@@ -1,0 +1,45 @@
+---
+title: YPFS Citation Style Language
+author: corey
+date: '2021-03-24'
+categories:
+  - open data
+  - YPFS
+  - code bits
+---
+When I started at YPFS, we did all COVID all the time.
+I'd wake up, get paid to doomscroll, and pump out some blogs about what was happening. When we reverted to case-writing, a huge backlog of cases had to be prepped for publication.
+Many of these were years-old.
+They neither shared common formatting nor common citations, and---because the cases were so old---the original authors had moved on to bigger and better things.
+We needed to solve all the problems that come with a team distributed not only across space but also time.
+
+For literal centuries, publications have solved this problem with style guides and time-consuming editing practices.
+However, these are only as strong as their enforcement.
+Without savvy, patient editors and authors with hours to spare, editing for standardization rightfully takes a back seat to editing for clarity and content.
+A somewhat newer solution involves distributing Word templates that authors simply fill in, Mad-Libs style.
+But again, you run into the problem of enforcement.
+The first time a line breaks where you don't want it to, or you copy the source style along with the text, the Word template ceases to be *authoritative*.
+
+Moreover, for editors reviewing work years later, if citations aren't perfect or comprehensive, finding the original document can be a bear.
+These systems do not *link the product to the process*.
+They allow authors to keep "two sets of books": one, incomplete but well-formatted, that gets published; another, complete but unstructured, located somewhere without a link tracing to it.
+In this way, Word documents---for all the ways they liberate formatting and track changes---are little different from plain paper.
+We have had [ways](https://en.wikipedia.org/wiki/Hypertext) to [connect](https://en.wikipedia.org/wiki/Hypertext) product and process for years, but it is hard to generate buy-in.
+Some compromise between accessibility (plain-text editors aren't familiar to most) and utility (e.g. Markdown would be ideal) is usually required.
+
+Our compromise is the amazing reference manager [Zotero](https://www.zotero.org).
+It builds citations using Citation Style Language ([CSL](https://docs.citationstyles.org/en/stable/primer.html)).
+CSL imposes it style in Word documents using fields (kinda like those used often for page numbers or automatically updating dates) that it controls.
+In this way it is authoritative.
+Zotero feeds it information stored in its desktop app.
+What you put in is put out on the page.
+In this way it connects product to process: to create a correct and nice-looking bibliography requires citing throughout a document and inputting data correctly to Zotero, which is super easy to search and connects documents to their contexts on the web.
+
+CSL, is also open source, which means that we could configure a style to our liking.
+While we mostly like Chicago (author-date) style, I and another Research Associate updated it with some contextual information.
+I learnt this XML-like language and have been deploying it with Git.
+It's my first experience developing software that people actually *use*.
+This makes a huge difference!
+Working with something that will be used in the future by end-users made me think several steps ahead to maintain forward- and backward-compatibility, and reminded me how much I enjoy solving problems.
+
+Check out the code [here](https://github.com/runkelcorey/ypfs/blob/master/ypfs-mini.csl).

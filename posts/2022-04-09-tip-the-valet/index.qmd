@@ -1,0 +1,49 @@
+---
+title: Tip the valet!
+author: Corey Runkel
+date: '2022-04-12'
+categories:
+  - code bits
+  - R
+---
+
+Several months ago, I got it in my head to write API clients for R users.
+The goal was to fill gaps for my colleagues and other researchers, but as I remember it now, it was also directed at the job market and personal growth.
+Contributing to open-source projects is a great way to publicize skills and contribute in ways that are *actually needed*.
+Contrast this with the [umpteenth chess solver written for class](https://debarghyadas.com/writes/kpcb/).
+
+Additionally, the choice of project can reflect an entry programmer's motivations and experience.
+One jump that's important to make from academia is understanding that not everything needs to be created from the ground up.
+In college, creating a new club was a checkbox for those climbing the prestige ladder.
+In true UVA fashion, this urge was even present in student organizing---there's a pipeline from organizing to Deloitte that's as thick as organizing to professional organizing/unions/law school---and I often saw students choose the easy path of starting a new club instead of the hard work improving what already existed.
+Working with structures, forums, and people that are already available is a far more powerful option, though it can take difficult politicking to do so.
+
+In open-source, licenses limit how proprietary people can be about their creations.
+And no one awards points for already-built pieces of software (unless they cross languages).
+So, to build open-source incentivizes answering new problems and using already-made tools.
+To build an API client in R today, you don't need a great knowledge of HTTP responses; you just need `httr`.
+You don't even need to know how to unnest JSONs, you just need `as.data.frame()`.
+What you do need, is a sense of what problems still need solutions, and how to find those solutions quickly (that's where the other tools step in).
+
+Valet, the Bank of Canada's API, did not have an R client when the YPFS was studying its COVID work, and I pretty much stick to R.
+So, to demonstrate that I could build a solution quickly, without reinventing the wheel, I wrote [valet](runkelcorey.github.io/valet/), which was just accepted by [CRAN](https://cran.r-project.org/package=valet)!
+It covers all of the API's endpoints, so importing datasets to R is a reproducible breeze.
+This project also taught me about the infrastructure of package development:
+
+* documentation
+* testing
+* submission
+
+As you'd expect, Hadley's [book](https://r-pkgs.org/) covers it all in great detail, so I won't describe my process.
+I'll just say that I am blown away at the comprehensiveness of the R ecosystem for package development and maintenance:
+
+* `Roxygen` for documenting packages inline with the actual functions
+* `testthat` for writing easy-to-understand tests
+* `devtools` for checking against R's technical requirements, building documentation, and submitting
+* `pkgdown` for making documentation websites with no added effort (okay, a little bit of understanding GitHub Actions/Pages)
+* `usethis` for a million myriad add-ons and timesavers
+
+In my mind, it's these components that allow people with no formal training to release helpful, useful packages.
+The only limit to the number of good packages should be the number of good ideas.
+
+Next up for me is to really understand Docker: when to use...how to use...and why does it take 2GB on my computer?

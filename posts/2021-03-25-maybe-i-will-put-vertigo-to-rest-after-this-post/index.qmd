@@ -1,0 +1,43 @@
+---
+title: Maybe I will put Vertigo to rest after this post
+author: corey
+date: '2021-03-28'
+draft: true
+categories:
+  - essay
+  - film
+  - analysis
+---
+*Vertigo* is a horrible movie to write about.
+Pick your favorite smoke metaphor, apply it to Hitchock's 1958 mystery, and you'll have a true bit of analysis ready for your next Zoom dinner party.
+This post is my fourth expedition into the tangle of pathologies surrounding the movie and its protagonist, Scottie Ferguson (James Stewart).
+
+I've written before about how *Vertigo*'s monstrous, dreamy (but not necessarily nightmarish) proportions hint at Scottie's mental retreat from the world at hand.
+I concluded that Scottie re-imposed control over his world by shaping, coloring, and clothing Judy to his desire, but that he could not grapple with the fact that the Madeleine he knew was a fiction.
+Just the same, I wrote,
+>the bent of America is towards taking that which/who is not ours and assimilating them, without dealing with “underlying” issues.
+
+I relied for this inference on some contextual knowledge about Hitchcock and Jimmy Stewart.
+Specifically, I asserted that Hitchcock chose Stewart as his disoriented protagonist not in spite of his roles as the all-American man, but because of those roles.
+Hitchcock, I said, understood that audiences blurred characters from different films together when the same actor represented those characters, even when they don't intend to.
+Jimmy Stewart's voyeur in *Vertigo* would therefore complicate the wholesome Stewart of *Mr. Smith Goes to Washington* and *It's a Wonderful Life*.
+
+Since Laura Mulvey's [articulation](https://the.hitchcock.zone/wiki/Screen_(1975)_-_Visual_pleasure_and_narrative_cinema) of the male gaze from her analysis of *Vertigo*, claims about Stewart like mine are nothing new.
+Later work analyzing art other than *Vertigo* have added to the dimensions of the gaze.
+XXX wrote one of the first feminist critiques of the flâneur as seen primarily in early modernist works.
+When the identities she associates with the flâneur---man, leisure *class*, leisure *goals* ("What will you do?" Midge asks; "Oh, nothing. Just walk," Scottie replies)---are compared to Scottie, the results---freedom to break social norms, presumption of sexual interest---line up nicely.
+This deepens one traditional interpretation, which would use Scottie's background as an investigator to explain why he feels empowered to breach other's privacy and put them on the defensive.
+XXX's analysis also places him in a long line of flâneurs.
+
+Because my conclusion was compatible with Mulvey's and XXX's conclusions, I felt comfortable making such a grand claim.
+But my argument relied on the audience coming to *Vertigo* with a lot of contextual information about Jimmy Stewart.
+And I was lazy by drawing my conclusion about America from Scottie's identity rather than the film's content.
+
+Here I want to argue that claim using the film's content.
+In some ways, the argument mirrors my previous essay, only this time the subjects are the public spectacles that Scottie takes in---the Golden Gate, John Muir Forest, and the mission-turned-museum San Juan Bautista---while the objects are the pre-American terrors those spectacles harnessed---the San Francisco Bay, towering redwoods, and the heights of the Mission San Juan Bautista.
+To put it all together, I claim that modern man failed to tame San Francisco.
+The idea of modern man is intricately tied to the flâneur.
+XXX's analysis posits the flâneur as a consumer of public space, which was produced for him.
+But, while XXX considered the fact that these were produced, she did not consider the production itself.
+
+For that we need YYY's *American Technological Sublime*.
