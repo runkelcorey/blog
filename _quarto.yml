@@ -1,6 +1,6 @@
 project:
   type: website
-  output-dir: runkelcorey.github.io
+  output-dir: ../runkelcorey.github.io
 
 website:
   title: "Corey"
