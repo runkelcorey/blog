@@ -7,6 +7,11 @@ categories:
   - R
 ---
 
+Valet, the Bank of Canada's API, did not have an R client when the YPFS was studying its COVID work, and I pretty much stick to R.
+So, to demonstrate that I could build a solution quickly, without reinventing the wheel, I wrote [valet](runkelcorey.github.io/valet/), which was just accepted by [CRAN](https://cran.r-project.org/package=valet)!
+If you have a tip for me, or a bug that needs fixing, [let me know](https://github.com/runkelcorey/valet/issues).
+
+
 Several months ago, I got it in my head to write API clients for R users.
 The goal was to fill gaps for my colleagues and other researchers, but as I remember it now, it was also directed at the job market and personal growth.
 Contributing to open-source projects is a great way to publicize skills and contribute in ways that are *actually needed*.
@@ -25,9 +30,7 @@ To build an API client in R today, you don't need a great knowledge of HTTP resp
 You don't even need to know how to unnest JSONs, you just need `as.data.frame()`.
 What you do need, is a sense of what problems still need solutions, and how to find those solutions quickly (that's where the other tools step in).
 
-Valet, the Bank of Canada's API, did not have an R client when the YPFS was studying its COVID work, and I pretty much stick to R.
-So, to demonstrate that I could build a solution quickly, without reinventing the wheel, I wrote [valet](runkelcorey.github.io/valet/), which was just accepted by [CRAN](https://cran.r-project.org/package=valet)!
-It covers all of the API's endpoints, so importing datasets to R is a reproducible breeze.
+My project covers all of the API's endpoints, so importing datasets to R is a reproducible breeze.
 This project also taught me about the infrastructure of package development:
 
 * documentation
