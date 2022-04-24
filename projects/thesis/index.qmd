@@ -3,5 +3,5 @@ title: Political Implications of Residential Mortgages in Crisis
 subtitle: My undergrad thesis in Political & Social Thought
 author: Corey Runkel
 resources:
-    - "projects/thesis/*"
+    - "[^qmd]$"
 ---
