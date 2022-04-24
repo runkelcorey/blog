@@ -1,6 +1,6 @@
 ---
 title: "About"
-image: profile.jpg
+image: files/profile.jpg
 about:
   template: broadside
   links:
@@ -13,8 +13,20 @@ about:
     - icon: github
       text: Github
       href: https://github.com/runkelcorey
+    - icon: file-person
+      text: Résumé
+      href: files/resume.pdf
 
 ---
 
-Corey Runkel is a Research Associate at the Yale Program on Financial Stability based in New Haven, CT.
-Off the clock, he rock climbs, cycles, reads about bygone ideas, and watches movies made in bygone times.
+I am a Research Associate at the [Yale Program on Financial Stability](https://som.yale.edu/centers/program-on-financial-stability) based in New Haven, CT.
+I author [case studies](https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=3264284) of government responses to financial crises.
+This combines my interest in political economy with an opportunity to build my skills visualizing structured and unstructured data.
+Off the clock, I climb, cycle, [watch movies made in bygone times](https://letterboxd.com/runkelcorey/), and [read histories of ideas and institutions](https://www.goodreads.com/user/show/112898051-corey-runkel).
+
+Soon, I'll start as a Data Analyst at Kin + Carta.
+I'm looking forward to growing in one of the most dynamic industries and doing work with such a clear outcome.
+Eventually, I want to become a leader in digital transformation; organizations generate a ton of unused data and understanding that is key to making wise decisions.
+
+Before Yale, I graduated from the University of Virginia, where I double majored in Political \& Social Thought and Economics.
+I wrote a thesis estimating the impact of home price depreciation on voting outcomes, and worked briefly with the UVA School of Architecture to improve transit outcomes in central Virginia.
