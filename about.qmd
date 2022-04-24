@@ -16,7 +16,7 @@ about:
     - icon: file-person
       text: Résumé
       href: files/resume.pdf
-
+resources: files/resume.pdf
 ---
 
 I am a Research Associate at the [Yale Program on Financial Stability](https://som.yale.edu/centers/program-on-financial-stability) based in New Haven, CT.

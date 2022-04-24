@@ -13,7 +13,9 @@ website:
         href: https://twitter.com/platopasta
 format:
   html:
-    theme: morph
+    theme:
+      light: morph
+      dark: vapor
     css: styles.css
 
 
