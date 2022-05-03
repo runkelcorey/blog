@@ -6,53 +6,169 @@ categories:
   - fitness
   - cycling
   - new haven
+  - bucket list
 draft: true
 ---
 
 I learned to ride a bike just before I moved to New Haven.
 Living in a city, abandoning my boring, dangerous, radio-less car seemed like a great statement to make about myself and the world I wanted to see.
-Unfortunately, Amtrak is *expensive* and going rock climbing or hiking in the White Mountains is pretty hard without a car.
-But, I still became the cyclist I hoped to be.
-If the roads are dry, I bike.
+Unfortunately, Amtrak is *expensive* and getting to the White Mountains is pretty hard without a car.
 
-I've proudly assembled the lobster gloves, under-helmet hats, and merino wool to make windchills in the single digits tolerable.
+Still, I became the cyclist I hoped to be: if the roads are dry, I bike.
+I've assembled the lobster gloves, under-helmet hats, and merino wool that make windchills in the single digits tolerable.
 And I try to limit my car trips to groceries and Boston (where the ol' partner lives).
-But more than a statement about my identity, I'm compelled to bike because it gives me the joy that I missed out on in childhood.
-Navigating a city quickly, by my own legs, with the wind cooling me down, is a lot of fun.
-(It's even more fun when your bike is made of vintage Campagnolo and leather.)
+But more than a statement about my identity, I like to bike because it gives me joy that I missed out on in childhood.
 
-And getting outside, especially in the depths of covid, was tolerable when I first found the Farmington Canal Trail.
-Running 84 miles from New Haven to Northampton, the trail is a piece of functional history; lining its sides are locks from the old canal, while its right-of-way was secured after the advent of cars by the railroad that ran followed the canal.
-I'd gone on sit bone--shattering 46 milers on the Farmington, but never ventured past Southington, CT, where the trail peters out and cyclists must brave the road to catch the northern section up to Massachussetts.
-Still, the first time I got on the Farmington I knew that I would one day cycle the whole thing.
+Moreover, life in New Haven got a lot better when I found the Farmington Canal Trail in the covid summer of 2020.
+Running 65 miles from New Haven to Northampton, the trail is a piece of functional history; a railroad and, before that, a canal, a few historical locks still line its sides.
+I'd taken the trail on a cocxyx-shattering 46-mile ride last year, but never ventured past Southington, CT, where the trail peters out and cyclists must brave the road to catch the northern section up to Massachussetts.
+I nearly passed out that day from low energy, but it didn't diminish my goal to one day cycle the whole thing.
 
-To make the trip worth it to my list-obsessed brain, I decided to add a bit and make it an even 100 miles---a proper *century*.
-And to make it easier on myself, I decided to stop along the route often, to relieve my body and enjoy the delights of New England.
-Weirdly, not a whole lot of online types seem to have done this, so I'm sharing my journey here.
+I decided to add a bunch and make it an even 100 miles---a proper *century*---to satisfy my list-obsessed brain.
+And to make it easier on myself, I decided to stop along the route often, to stretch and enjoy the delights of New England.
+Weirdly, not a whole lot of online types seem to have done this route from New Haven, so I'm sharing my journey here.
 
 
 ## Route
 
-With the Farmington proper being 84 miles, and with numerous road excursions, the route is far from a foregone conclusion.
-I further maximized this trip by adding the 5-6 mile Farmington River Trail spur, a detour that cuts through the charming towns of Simsbury and Canton, and gives the rider more to look at than trees and twigs.
-On the Massachussetts end, cyclists are confronted with the paved end of the trail in Westfield, short of the original canal.
-Having seen and been charmed by Northampton, I decided to continue there for my add-on.
-They're an oasis for food and beer, two post-ride necessities.
+Helen Hadley Hall, the [current] southern terminus, to Westfield is 65 miles, leaving 35 miles of choices for the route-setter.
+The 5-6 mile Farmington River Trail spur was an easy choice to make.
+It cuts through the charming towns of Collinsville and Canton, and gives the cyclists quaint views of a fast-moving river.
 
-However, this leaves 10-15 miles to spare.
-If you can manage it, I suggest finding a way to move your bike from the Norwottuck Rail Trail to the Springfield Amtrak station, which allows you to continue without facing cars and see Amherst, MA.
-This route also shows the killer app of the Farmington Canal century: it's a point-to-point where you leave your car at home.
-In Springfield, just bring your bike on the train, which is free if you take CTrail, adding up to a whopping \$10 from Springfield to New Haven!
-Of course, if you don't have a friend, you can go totally carless and double back from Northampton to Springfield for the add-on, which adds maybe 8 miles and sees some on-road action.
+On the Massachussetts end, cyclists are confronted with the paved end of the trail in Westfield, short of the original canal.
+We had debated continuing to Northampton, and the Norwottuck Rail Trail, before getting a friend with a bike rack to drive us to the Springfield Amtrak station, but it was too hard to coordinate.
+It was disappointing to miss this because Northampton has a great beer and food culture, and connecting rail trail would have kept us in pastoral surrounds and off roads for longer.
+We ultimately decided to make a u-turn at Westfield, hang a left at Simsbury, and bike to Hartford, where we caught the train.
+
+:::{.callout-tip}
+### A note about trains
+
+Cycling up to Northampton and then taking a u-turn back to Springfield could have worked if the train schedules aligned.
+However, CTrail only ran^[Check the schedules, because they very well may have changed; ours did two days before we had planned to go.] two trains from Springfield, one at 5:30p and one at 9:45p, so if you miss one you're stuck until dark.
+
+Ending in Hartford was a much more robust option, even if it sacrificed a bit of beauty and some safety; both CTrail and Amtrak serve the Hartford--New Haven route more frequently (in fact, all trains that run from Northampton stop at Hartford) and, when we went, both 4p and 5:45p CTrail trains served New Haven.
+Using CTrail was important because:
+1. They don't cap the number of bikes aboard
+2. Bikes ride free
+3. Ticket prices don't fluctuate
+These features gave us flexbility to miss one train and take the next.
+:::
+
+This route involved 80% paved trail, 3% cinder/packed dirt/gravel trail, 15% sharrow roads, and 2% roads with bike lanes or large shoulders.
+I felt uneasy on the sharrow roads because cars were going 50 or 60mph around us, though this part of Connecticut is accustomed to bike traffic.
+A 1 mile section between the Southern and Northern sections of the trail was straight up not fun---3 lanes of traffic, constant turnoffs for businesses, people entering the interstate, several stoplights, and glass all over the roadway---and, to make it worse, we had to make a left turn out of that street.
+And the last 9 miles into Hartford are all on roads; the shoulder starts big (bigger than a bike lane), which you will need for the 300ft climb over Talcott Mountain.
+You are rewarded by an equally long descent, which we sent at 40mph, and rolling hills that gradually drop you 450ft.
+Here, the shoulder narrows considerably, to a width of 2ft at many points.
+We averaged 20-25mph there, and the road is well-paved with little debris, but I was on high alert nonetheless.
+
+Luckily, I had plenty of bandwidth to stay alert on these sections because of all the carefree miles.
+After Hamden, there's probably 10 cumulative miles of bumpy trail.
+Being the route of an historical canal, it's unbelievably flat.
+There are *no* sections on the trail that require climbing a grade higher than 2% for more than 1 minute.
 
 
 ## Prep
 
+I ate a ton and drank no alcohol for the 4 days leading up to this ride.
+I rested the day before, but otherwise didn't exercise any differently than usual.
+I continued biking to work 3-4 days a week.
+And, maybe a month ago, I rode 20 miles?
+In any case, my last proper long ride was the 46-miler last year.
+I think this is actually quite an important difference between me and people who pull out their bike once a month, but it shows you how accessible 100 miles can be.
+
 
 ## Stops
 
+Despite my grand ambitions of breweries and fine dining, we only stopped twice for more than 10 minutes, at Red's Café in Southwick, MA and Janik's Pierogi Café in Westfield.
+I'm pretty ambivalent about Red's, but huge on Janik's.
+Red's advertised as being bike friendly, which is always nice.
+They have beautiful floors yet somehow don't care about all the bike shoes coming in.
+But, their espresso was sub-sub-par; I bought a great croissant from them, but one croissant a café does not make.
+
+Janik's was not super high on us bringing our bikes in, but I think the purveyor saw the empty restaurant and re-thought her strategy.
+I think they could do well advertising for bikers because they're no more than 200ft from the trail (also their floors aren't anything special).
+Moreover, their pierogis are filling and their smoothies refreshing.
+My coworker, who joined me on the ride, bought some cute Polish tchotchkes that he could stick in his frame bag.
+
+We stopped to pee **a lot** and I recommend thinking outside those, where you'll be rewarded with fisher spots down by the river, beautiful wooded meadows, etc.
+To poop, your options are Cheshire, which is 14 miles in, or a restaurant, unless Shallow Brook State Park (~ 45 miles up) opens their restrooms.
+I felt that there must be something in Simsbury, since the rest of the bike infrastructure was so great, but we couldn't spot anything from the trail.
+If this is true, it's a big oversight.
+
+
+## Gear
+
+I try to resist bike gear as much as possible.
+Every piece is expensive and so specialized that I usually can't use it for more than one function.
+If that's you, then borrow, borrow, borrow!
+At the very least you'll learn what is useful and what's not.
+
+I think I took just about the most minimal gear that I could:
+* saddle bag
+  + spare tube
+  + tire levers
+  + patch kit
+  + phone
+  + ID
+  + money
+  + mask
+  + wireless earbuds
+* frame
+  + squeezable water bottle
+  + pedal clips
+* body
+  + jersey
+    + arm warmers
+    + biking jacket
+  + biking sunglasses
+  + bib shorts
+  + windproof gloves
+  + helmet!
+
+My friend added:
+* frame pump
+* phone mount, which we needed for directions on the road sections
+
+Of these, I purchased clips (\$5 used), a helmet (\$4 used, though it's debatable whether you should buy a used helmet), and everything in my saddle bag (~\$40 for the biking-specific stuff, all new, but you should always have this on hand), and everything else I borrowed from cyclist/triathlon friends.
+**Find these friends**.
+I cannot imagine doing this ride without a squeezable water bottle (don't have to stop), a jersey (accessible pockets), arm warmers/jacket (it was 45F when we started), or shorts with chamois padding (take one ride, and you'll understand).
+In fact, I'm thinking of buying all these after that ride.
+I also can't imagine not having clips.
+While my friend was able to really pull on his clipless pedals, I just had the ability to grind away or bomb down hills without worrying my feet would fly off.
+You can add pedals on to a bike in about 10 minutes, so you can take them off when you're going for a joyride.
+
+The only item I would not have brought again was the earbuds.
+Talk to your friend! Listen to nature! Think!
 
 ## Review
 
+**This ride was a blast, and I think the route we chose was optimal for unsupported cyclists starting in New Haven**.
+I spent considerable amounts of time riding without my hands, and that's how it should be.
+We saw people out for morning jogs, elderly folk on their mid-day walks, ducks chilling in the water, and many people riding (though none of them passed us :D).
+Surprisingly, there are several bridges that rise 50ft above riverways and offer really cool views that I rarely get while biking.
+
+As for the physical task of biking 100 miles, I couldn't imagine it being easier.
+I felt as good at 95 miles as I did at 45 miles.
+In large part, I credit the flatness and the chamois protecting my nether regions, but I also have to think it was the prep.
+I almost passed out last spring after 45 miles, and I ended my century full.
+
+I can totally see myself doing this again, though likely somehwere in Massachussetts!
+I loved the point-to-point and train aspect of this trip and want to find more routes that allow it, because it eliminates the hassle of driving to and from the end, the boredom of an out-and-back, and the danger of a loop route.
+On the other hand, I can't see myself doing the Cape Cod route, because of the wind.
+We faced moderate wind throughout and it was very annoying.
+
 
 ## Dos and Don'ts
+
+Do
+* check your bike's brake positioning, gears, and general operation before riding
+* bring clif bars and other sources of sugar
+* stop when you see something cool
+* refill whenever you see a fountain
+* be flexible and pick a great day (ours was sunny the whole day and the flowers were blooming)
+* apply sunscreen
+* take the train
+
+Don't
+* stress about water, there are plenty of fountains
