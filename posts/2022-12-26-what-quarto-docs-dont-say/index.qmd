@@ -1,0 +1,57 @@
+---
+title: What Quarto Docs Don't Say About Themes
+author: Corey Runkel
+date: 2022-12-26
+categories:
+    - today i learned
+    - quarto
+    - data visualization
+draft: true
+---
+
+Quarto, the multilingual technical publishing platform that this site uses, has great documentation for beginners.
+However, it missses the mark by not going deep enough in its reference docs and distributing its articles over too many pages, leaving users flipping through tabs to find the help they need.
+I found this was true when trying to create themes for this blog and some slide decks I was working on: the docs gave me basic use cases but didn't indicate how quarto files would behave when I ventured beyond the use cases covered.
+
+**This post is a unified guide for how to create themes for reveal.js presentations and blogs when you know what you want to see but don't know much about HTML or any of the other tech that supports quarto.**
+In my case, I was looking to mirror the style guide my company, Kin + Carta, made for PowerPoint presentations.
+I expect this is a common use-case for themeing; compared with their peers, quarto users are often early adopters and communication wonks who are trying to move their organizations from PowerPoint and Word to reveal.js and to HTML.
+
+## Finding Web Fonts and Colors
+
+Both Yale and Kin + Carta have provided web-facing branding for designers looking to use their styling out of the box.
+Look around if your organization has an internal or external website for this; usually, this will be called branding, but it may be called "creative expression" or "corporate identity"—whatever lingo it takes, it should have fonts and colors for you to use.
+If it's kept up with the times, it'll provide the colors as hex codes, a # followed by six hexadecimal digits.
+[These codes](https://en.wikipedia.org/wiki/Web_colors#Hex_triplet) map onto more than 16 million colors that are combinations of red, green, and blue.[^If you've used the RGB scale for print, this will be familiar.]
+If your organization didn't provide those colors, they are easy to identify using the eyedropper tool.
+
+Pointing the eyedropper over Kin + Carta's homepage, for instance, yields
+
+```{{css}}
+#F7F7F7
+```
+
+Fonts are more difficult, as there are proprietary fonts that cannot be easily served over the web or, in our case, in a portable presentation.
+Yale's typeface is a good example: it's the property of Yale and, while as an employee I could use it and link to it's file in a presentation, I have to worry about that file moving, the links to those files, and whether files sent around will let people steal the font.
+Instead of a proprietary font, turn to Google Fonts for a much easier, reliable, and accessible solution.
+Google assumes the cost of serving these fonts for some [ambiguous returns](https://www.typewolf.com/blog/will-google-fonts-ever-be-shut-down) and that means these fonts can be used with just a few lines of code.
+
+```{{css}}
+@url('google.com')
+```
+
+To match Yale's font, I filtered Google fonts for serif typefaces and tried to eyeball the matches.
+The key here is to look at letters that have a lot of features and vary from typeface to typeface; q, g, and a are safe bets.
+When comparing a font, look for
+
+- points where letters *transition* thicknesses, such as the sides of o's
+- the curlicue parts of lowercase q, g, and a
+- uppercase letters that are often complex, such as Q and G
+- the presence or absence of serifs on lowercase i and t
+- radial symmetry in o
+
+These comparison points will help you adjudicate between two serif fonts look similar.
+Notice how both of these fonts look similar, but one is a much better fit for YaleNew.
+That's because of the motion of the a.
+
+Another way to find similar fonts is to look for shared ancestors.
