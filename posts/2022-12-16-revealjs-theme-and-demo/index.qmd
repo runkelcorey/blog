@@ -1,0 +1,119 @@
+---
+title: Use Free Tools to Match Proprietary Themes
+author: corey
+date: 2023-01-16
+draft: true
+
+---
+
+I'm an evangelist for creating deliverables in new formats.
+PDF and PowerPoint date from teh 1990s and they are still bound by many of the same constraints they were developed with.
+PDF, for example, has limited interactivity and maintains fidelity to print that gets in the way of exploring data.
+
+Web designs offer ways to explore data that can end up delighting users.
+Introducing something like Quarto and reveal.js to your organization is a great way to spread awareness and prove the value of new formats.
+However, doing so usually means conforming to your organization's style guide.
+
+As a markup language, reveal.js offers CSS themeing that is much more authoritative and comprehensive than MS Office's ambiguously applied stylesheets.
+But it also poses compatibility problems.
+Installing your organization's preferred font is suddenly not scalable for everyday tasks; are you going to host and authenticate use of a proprietary font yourself?
+If your organization prescribes proprietary branding resources, they probably also have a bureaucratic way of hosting it.
+
+Instead, the web offers a number of free tools that can help you create a lookalike.
+Let's apply this treatment to my company, Kin + Carta.
+
+
+## Matching fonts
+
+K+C actually uses free fonts, but for the purposes of this let's pretend they are proprietary.
+
+Google Fonts abstracts away the engineering challenges of serving non-system fonts,^[Not sure exactly what Google gains here. Answers I've seen is that them serving fonts enables analytics on the fonts themselves, and that it facilitates web designers to use fonts instead of imagery, which is more difficult for Google to crawl. I don't buy either of these: what's the value of knowing how people use particular fonts? and when Google Fonts launched it was the 2010s, well after using text became standard.] allowing creators to focus on design.
+To match DM Serif Display, K+C's main font, I'll filter for serif fonts and move the thickness (called *weight* in typography) slider up a few notches.
+
+We're still left with 290+ styles.
+Unfortunately, Google Font's search features are limited and we can't even specify what type of serif font we want.
+
+::: {.callout-note}
+Types of serif fonts include:
+
+    ::: {.oldstyle}
+    * Oldstyle, with well-defined serifs and moderate transition (Old Standard)
+    :::
+    ::: {.transitional}
+    * Transitional, with higher transition, smaller serifs, and rounder letterforms (Libre Baskerville)
+    :::
+    ::: {.modern}
+    * Modern, with high transition and exaggerated serifs (Bodoni Moda)
+    :::
+    ::: {.slab}
+    * Slab serif, with well-defined but blocky serifs and no transition  (Arvo)
+    :::
+    ::: {.humanist}
+    * Humanist, with rounded letterforms, some transition, and small serifs (Sorts Mill Goudy)
+    :::
+    ::: {.boilerplate}
+    * Boilerplate, with thick, blocky serifs and thick, blocky letterforms (Ultra)
+    :::
+
+One key to distinguishing them is, not surprisingly, [in the serif](https://www.h2ostreet.com/insights/choosing-fonts-for-your-brand).
+:::
+
+Let's isolate some letterforms to make our decision.
+While there are few differences between serif *s*, *v*, and *u*, serif *a*, *g*, and *q* can be drawn in many different ways.
+
+The curlicue tails on *a* and *g* can bring a wealth of differences:
+
++---------------+---------------+
+| DM Serif      | Playfair      |
++===============+===============+
+| :::{.dm-serif}| :::{.play}    |
+| a             | a             |
+| :::           | :::           |
++---------------+---------------+
+| :::{.dm-serif}| :::{.play}    |
+| g             | g             |
+| :::           | :::           |
++---------------+---------------+
+
+: Comparing tails between serif fonts
+
+
+*q* and *d* lets us see transition, slant, and ascenders/descenders.
+Transition means how much a font varies from its thickest to its narrowest, along a closed loop such as an *o* or the hole of a *q*.
+Slant is how far an unitalicized style of a font leans to one side (usually the right).
+Ascenders are the stalks that rise to the top of the tallest letters such as *l*.
+Usually, *h*, *b*, and *d* are used since they also have lower forms attached.
+Descenders are the counterparts that sink below the baseline in *p*, *q*, *g*, and *y*.
+
++---------------+---------------+
+| DM Serif      | Meriweather   |
++===============+===============+
+| :::{.dm-serif}| :::{.meri}    |
+| q             | q             |
+| :::           | :::           |
++---------------+---------------+
+| :::{.dm-serif}| :::{.meri}    |
+| d             | d             |
+| :::           | :::           |
++---------------+---------------+
+
+: Comparing transition, slant, and height between serif fonts
+
+
+## Matching colors
+
+One of the best standards on the web is hex-value colors.
+These are designated by six **hex**adecimal characters, for $16^6=16,777,216$ possible colors.
+Every modern web browser can render them and they helpfully correspond to combinations of the RGB colorspace.
+Every modern web browser also has an eyedropper tool, which can read and copy the hex values to your clipboard.
+
+2 iframes:
+- home page
+- random dark theme page
+
+However, K+C uses several different colors, so which should I choose?
+The trick here is not to take willy nilly from websites but to look specifically at coherent webpages.
+Brands today usually have a light and dark theme in addition to accent colors.
+Either find brand guidelines or keep it safe by sticking to a page that you're confident received attention by a professional web designer, like the home page.
+
+iframe, selected colors

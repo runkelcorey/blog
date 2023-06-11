@@ -1,0 +1,30 @@
+/*-- scss:defaults --*/
+
+
+// Typography
+
+$font-family-sans-serif:    "Alegreya Sans SC", sans-serif !default;
+$font-family-monospace:     "Fira Code", monospace !default;
+$font-family-base:          "Alegreya", serif !default;
+
+$headings-font-family:      "Fira Sans Condensed", sans-serif !default;
+$headings-font-style:       italic !default;
+$headings-font-weight:      800 !default;
+
+$input-btn-font-family: $font-family-sans-serif !default;
+
+
+
+/*-- scss:rules --*/
+
+
+// Variables
+
+$web-font-path: "https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,300;1,300&family=Alegreya:ital@0;1&family=Fira+Code&family=Fira+Sans+Condensed:ital,wght@0,800;1,800&display=swap";
+@if $web-font-path {
+  @import url($web-font-path);
+}
+
+// Options
+
+$enable-rounded: false

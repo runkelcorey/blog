@@ -7,7 +7,6 @@ categories:
   - cycling
   - new haven
   - bucket list
-draft: true
 ---
 
 I learned to ride a bike just before I moved to New Haven.
@@ -104,7 +103,7 @@ Every piece is expensive and so specialized that I usually can't use it for more
 If that's you, then borrow, borrow, borrow!
 At the very least you'll learn what is useful and what's not.
 
-I think I took just about the most minimal gear that I could:
+I took the following:
 * saddle bag
   + spare tube
   + tire levers
@@ -117,7 +116,7 @@ I think I took just about the most minimal gear that I could:
 * frame
   + squeezable water bottle
   + pedal clips
-* body
+* me
   + jersey
     + arm warmers
     + biking jacket
@@ -130,7 +129,7 @@ My friend added:
 * frame pump
 * phone mount, which we needed for directions on the road sections
 
-Of these, I purchased clips (\$5 used), a helmet (\$4 used, though it's debatable whether you should buy a used helmet), and everything in my saddle bag (~\$40 for the biking-specific stuff, all new, but you should always have this on hand), and everything else I borrowed from cyclist/triathlon friends.
+Of these, I purchased clips (\$5 used), a helmet (\$4 used, though not sure a used helmet is ever a good purchase), and everything in my saddle bag (~\$40 for the biking-specific stuff, all new, but you should always have this on hand), and everything else I borrowed from cyclist/triathlon friends.
 **Find these friends**.
 I cannot imagine doing this ride without a squeezable water bottle (don't have to stop), a jersey (accessible pockets), arm warmers/jacket (it was 45F when we started), or shorts with chamois padding (take one ride, and you'll understand).
 In fact, I'm thinking of buying all these after that ride.

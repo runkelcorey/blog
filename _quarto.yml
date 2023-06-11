@@ -14,9 +14,7 @@ website:
 format:
   html:
     theme:
-      light: morph
-      dark: vapor
-    css: styles.css
+      [flatly, broadsheet.scss]
 
 
 

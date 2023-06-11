@@ -1,0 +1,30 @@
+---
+title: "Liquid Gold"
+subtitle: "Part 1 of *How do Reservoirs Affect Home Prices?*"
+author: corey
+date: 2023-05-14
+categories:
+  - new england
+editor_options: 
+  markdown: 
+    wrap: sentence
+---
+
+When I moved to New Haven from Virginia in 2020, I suddenly noticed a lot of reservoirs.
+There's a few in Virginia, but I always associated those with muddy summer camp areas and tick lagoons.
+What I noticed in New England was that the reservoirs were really ... nice. 
+Their water looked bluer, their terrain more complex, and often they featured New Deal--era stone architecture.
+
+Reservoirs have become favorite places to run because of the views and the proximity.
+The proximity is interesting, because it's a result of a big city population with big city water needs.
+These reservoirs were built to enable growing populations; in a way, the water is here because I am here, not the other way around, which is how I've traditionally thought of city settlement.
+
+These reservoirs[^ I'm thinking particularly of the Middlesex Fells, Fresh Pond, and Winchester reservoirs north of Boston.] were built when recreation was entering its Romantic phase as urban Progressives extolled the need for nature.
+In addition to making clean, plentiful drinking water public property, these reservoirs sometimes provided public access to quietude and walking paths around the water's circumference.
+Though my running loops feel so natural, many of the lakes and ponds in New England are fronted by private homes that restrict access.
+
+These ponds are privileged spaces and a lot of media that deals with New England---Dawson's Creek, Dead Poet's Society (though technically that's Delaware)---show private bodies of water when portraying New England's old money.
+I'm curious about the reservoirs that do and don't allow homes built right up to the edge of the water:
+* how does water frontage affect land values? What's amazing about the Winchester reservoir is that they created waterfront property out of literally depressed land (and possibly, peoples' homes)
+* how does nearby recreation affect land values? Do the reservoirs that allow recreation and therefore do not allow homes on the water impact nearby home prices similarly?
+* what can the chronology and history of these reservoirs suggest about why different land decisions were made? In other words, why aren't all these reservoirs lined with parks?

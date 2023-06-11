@@ -1,0 +1,69 @@
+---
+title: "K+C Theme Demo"
+author: Corey Runkel
+date: December 16, 2022
+format:
+    revealjs:
+        navigation-mode: vertical
+#        logo: 
+        footer: "Theme Demo"
+---
+
+# Problem
+
+Technical demos in PowerPoint require lots of copying/pasting and tweaking for different audiences
+
+
+# Idea
+
+What if there were one presentation to rule them all?
+
+. . .
+
+What would that look like?
+
+
+# Features
+
+:::{.incremental}
+- ~~hide~~ show the slides you want to show
+- dive deeper for questions or digressions
+- integrate images, diagrams, and plots
+- show code well
+- easy to view and export
+:::
+
+
+# Reveal.js + Quarto
+
+Reveal
+- JavaScript, with all the beauty of web design
+- fine control over elements
+
+Quarto
+- ease of use
+- integrated Python, R, SQL, shell
+- nice documentation, IDE integration
+
+# Integrated Code
+
+Run code within presentation
+```{{r}}
+library(ggplot2)
+```
+
+. . .
+
+but optionally hide it
+```{r}
+#| echo: fenced
+#| include: false
+library(ggplot2)
+```
+
+# Integrated plots
+```{r}
+ggplot(iris, aes(Petal.Length, Petal.Width)) +
+    geom_point(aes(col = Species)) +
+    labs(x = 'Length of petal', 'Width of petal')
+```

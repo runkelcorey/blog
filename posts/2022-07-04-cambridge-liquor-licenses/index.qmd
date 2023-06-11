@@ -1,0 +1,115 @@
+---
+title: Where are Cambridge liquor licenses concentrated?
+author: corey
+date: '2022-07-04'
+categories:
+  - political economy
+  - R
+  - spatial analysis
+editor_options: 
+  markdown: 
+    wrap: sentence
+draft: true
+---
+
+An article published last week by the *Boston Globe* profiled research by beverage industry consultancy OFFSITE that showed liquor licenses cluster in white neighborhoods.
+The results, it claimed, are a result of Prohibition-era regulations around liquor licenses, which sought to restrict {insert quote here} from alcohol.
+In creating these legal barriers to allay their fears of Irish stereotypes, the laws also made it harder for Black, Asian, and Latinx business.
+I'm curious if the same dynamic plays out in Cambridge, though I'm ignorant of the legal history here.
+Additionally, \[Boston\] permits run \$400,000 on the secondary market, so their distribution is big business.
+
+To analyze this situation, I want to answer three questions:
+
+1.  Are \[restaurant\] liquor licenses more likely to appear in whiter neighborhoods?
+
+2.  How are retail liquor licenses distributed?
+
+## Data
+
+```{r}
+library(tidyverse)
+library(sf)
+library(tmap)
+library(tidycensus)
+```
+
+The City of Cambridge provides open data on permitees in their portal.
+We do not see applications.
+Demographic data come from the 2020 US Census.
+
+```{r}
+food_permits <- jsonlite::read_json("https://data.cambridgema.gov/resource/iect-ma2e.json", simplifyVector = T) %>%
+  filter(!is.na(longitude), !is.na(latitude)) %>%
+  mutate(number_of_seats = as.numeric(number_of_seats)) %>%
+  st_as_sf(coords = c("longitude", "latitude"), crs = 'NAD83')
+outdoor_permits <- jsonlite::read_json("https://data.cambridgema.gov/resource/qzsr-xrig.json", simplifyVector = T) %>%
+  filter(!is.na(longitude), !is.na(latitude)) %>%
+  st_as_sf(coords = c("longitude", "latitude"))
+```
+
+At the very least, I'll need race data for Middlesex County, MA.
+
+```{r}
+cambridge_race <- get_decennial(
+  geography = "tract",
+  state = "MA",
+  county = "Middlesex",
+  variables = c(
+    Hispanic = "P2_002N",
+    White = "P2_005N",
+    Black = "P2_006N",
+    Native = "P2_007N",
+    Asian = "P2_008N"
+  ),
+  summary_var = "P2_001N",
+  year = 2020,
+  geometry = TRUE
+) %>%
+  mutate(percent = 100 * (value / summary_value)) %>%
+  st_filter(food_permits, .predicate = st_intersects)
+```
+
+## EDA
+
+Let's start with some simple maps---where are food permits?
+what are the city's boundaries?
+
+```{r}
+cambridge_race %>%
+  filter(variable == 'White') %>%
+  tm_shape() +
+  tm_polygons(col = "percent",
+          style = "quantile",
+          n = 5,
+          palette = "-Greys",
+          title = "2020 US Census") + 
+  tm_shape(food_permits) +
+  tm_dots(col = "permit_type",
+          size = "number_of_seats",
+          title = "Permit Type",
+          title.size = "Number of Seats") +
+  tm_layout(title = "Percent White\nby Census tract\nand Restaurants",
+            frame = FALSE,
+            legend.outside = TRUE)
+```
+
+Permits cluster along the city's main streets---Massachussetts Ave., Broadway, Hampshire---and at first glance whiter neighborhoods do get more alcohol permits, though total permit numbers appear well-distributed.
+
+```{r}
+food_permits %>%
+  st_join(filter(cambridge_race, variable == "White")) %>%
+  st_drop_geometry() %>%
+  group_by(GEOID, permit_type, percent, summary_value) %>%
+  summarize(permits_per_capita = n()/summary_value) %>%
+  ggplot(aes(percent, permits_per_capita, col = permit_type)) +
+  geom_point() +
+  geom_smooth()
+```
+
+The biggest issue with this approach is a lack of data!
+We could add control variables, but we'd just be diluting an already watery model.
+What other questions could we answer with these data?
+
+## Outdoor Seating and City Microclimates
+
+Urban heat has been a big topic in the last few years; Boston adds to that frigid winter temperatures.

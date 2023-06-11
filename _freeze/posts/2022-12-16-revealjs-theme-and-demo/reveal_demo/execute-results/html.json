@@ -1,0 +1,16 @@
+{
+  "hash": "222ced9bfba4d6887808032a6ca62a9d",
+  "result": {
+    "markdown": "---\ntitle: \"K+C Theme Demo\"\nauthor: Corey Runkel\ndate: December 16, 2022\nformat:\n    revealjs:\n        navigation-mode: vertical\n#        logo: \n        footer: \"Theme Demo\"\n---\n\n\n# Problem\n\nTechnical demos in PowerPoint require lots of copying/pasting and tweaking for different audiences\n\n\n# Idea\n\nWhat if there were one presentation to rule them all?\n\n. . .\n\nWhat would that look like?\n\n\n# Features\n\n:::{.incremental}\n- ~~hide~~ show the slides you want to show\n- dive deeper for questions or digressions\n- integrate images, diagrams, and plots\n- show code well\n- easy to view and export\n:::\n\n\n# Reveal.js + Quarto\n\nReveal\n- JavaScript, with all the beauty of web design\n- fine control over elements\n\nQuarto\n- ease of use\n- integrated Python, R, SQL, shell\n- nice documentation, IDE integration\n\n# Integrated Code\n\nRun code within presentation\n```{{r}}\nlibrary(ggplot2)\n```\n\n. . .\n\nbut optionally hide it\n\n\n\n\n# Integrated plots\n\n::: {.cell}\n\n```{.r .cell-code}\nggplot(iris, aes(Petal.Length, Petal.Width)) +\n    geom_point(aes(col = Species)) +\n    labs(x = 'Length of petal', 'Width of petal')\n```\n\n::: {.cell-output-display}\n![](reveal_demo_files/figure-html/unnamed-chunk-2-1.png){width=672}\n:::\n:::",
+    "supporting": [
+      "reveal_demo_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

@@ -19,14 +19,13 @@ about:
 resources: files/resume.pdf
 ---
 
-I am a Research Associate at the [Yale Program on Financial Stability](https://som.yale.edu/centers/program-on-financial-stability) based in New Haven, CT.
-I author [case studies](https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=3264284) of government responses to financial crises.
-This combines my interest in political economy with an opportunity to build my skills visualizing structured and unstructured data.
+I am a Data Analyst at Kin + Carta, a digital transformation consultancy; I am based in Cambridge, MA.
+I create dashboards that visualize spatial data and explain statistical models.
+
 Off the clock, I climb, cycle, [watch movies made in bygone times](https://letterboxd.com/runkelcorey/), and [read histories of ideas and institutions](https://www.goodreads.com/user/show/112898051-corey-runkel).
 
-Soon, I'll start as a Data Analyst at Kin + Carta.
-I'm looking forward to growing in one of the most dynamic industries and doing work with such a clear outcome.
-Eventually, I want to become a leader in digital transformation; organizations generate a ton of unused data and understanding that is key to making wise decisions.
+From 2020 to 2022, I was a Research Associate at the [Yale Program on Financial Stability](https://som.yale.edu/centers/program-on-financial-stability) in New Haven, CT.
+There, I wrote [histories](https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=3264284) of financial crises, framed by the policies created to fight them.
 
 Before Yale, I graduated from the University of Virginia, where I double majored in Political \& Social Thought and Economics.
-I wrote a thesis estimating the impact of home price depreciation on voting outcomes, and worked briefly with the UVA School of Architecture to improve transit outcomes in central Virginia.
+I wrote a thesis estimating the impact of home price depreciation on voting outcomes, and worked with the UVA School of Architecture to improve transit outcomes in central Virginia.

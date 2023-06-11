@@ -1,0 +1,138 @@
+---
+title: What I use to work remotely
+author: corey
+date: 2022-11-18
+categories:
+  - tech
+  - remote work
+editor_options: 
+  markdown: 
+    wrap: sentence
+---
+
+When I landed my job at Kin + Carta, I invested in some creature comforts for remote work.
+At Yale, I kept hoping the office was a few elusive weeks away, and that it wasn't worth investing in gear that I would soon not need.
+That was silly at the time, but ridiculuous once I took a remote job.
+I began searching for a configuration that would:
+- save my neck the strain of looking down at a 13-inch laptop
+- save my back the pain of sitting in a $40 Ikea chair 8 hours a day
+- travel well
+- bring some aesthetic joy to my day
+- work for play as well as work
+
+I researched the r/onebag sub-reddit, a community of folks who engineer packing solutions for work trips, vacation, and everyday that fits in a single bag.
+I also looked to r/DigitalNomads, a group of folks with no fixed address, who work and travel simultaneously (or at least want to).
+From these forums, I settled on:
+- a laptop
+- collapsible laptop stand
+- second, thin monitor
+- monitor stand
+- mouse
+- keyboard
+
+This set-up, hacked together by u/username, would allow me the same comfort traveling as it would living in one place.
+I would also be able to stash it to firmly separate work from home.
+
+But, as my start date drew nearer, and my move to Cambridge more final, I realized that I wouldn't be traveling as much as I originally hoped.
+Much of this digital nomad stuff was pure fantasy for me, triggered by a realization that another move meant losing the ties to place that had taken more than a year to fasten in New Haven.
+Once I abandoned that constraint, I recognized some advantages to a fixed configuration, and looked for a big monitor as well as a standing desk.
+
+## Monitor(s)
+
+With a fixed configuration, larger screens made more sense, and weight was no longer a concern.
+This also brought the price down significantly: for $100, I purchased two 1.5-inch thick, 24-inch diagonal monitors, HDMI cables, and a monitor stand.
+(Imagine doing that 10 years ago).
+This gave me a ton of screen real estate, but required extra dongles to work with my 6-year-old laptop. Frustratingly, those dongles took weeks to ship and were difficult to find for less than $90.
+
+Ultimately, this set up was unwieldy.
+The dongles made choices between charging and peripherals difficult; the monitors were 5kg each, and I worried that they would crash onto my desk each night; ironically, this setup was also annoying for my neck since I had to crane to see the edges of the monitors.
+
+I sold those monitors for a small profit on Facebook Marketplace and swapped them for a 32-inch 4k screen.
+This is what I use today, and it's beautiful. The only annoying part is sharing my screen on calls; with so many pixels, other screens downsample the image to fit it in their windows.
+But it renders an amazing picture and connects to my work Macbooks and 6-year-old XPS.
+
+One tip here is to search Facebook Marketplace for 4k monitors and keep an eye out for gamers who are ditching their set-ups for lower-latency displays.
+My 60hz display is more than plenty for the work I do, and it seems like many gamers purchase these displays thinking it will work for them before realizing they need a higher refresh rate.
+As a result, they undervalue them / not many office workers seem to think about 4k vs 2k vs 1080p, driving down the price.
+I find that 4k at 32 inches (139 dpi) looks little different from my 13-inch Macbook (226 dpi).
+
+## Desk
+
+After 2 years of working at a too-high wood desk, I needed a change.
+My back was strained from sitting in one position for so many hours, my wrists hurt since my keyboard was too high up, and working at a fixed setup from home didn't promise much better.
+I had started to look for standing desks in late 2021 but always found something wrong with the options.
+New desks that wouldn't wobble if I handwrote notes and received good durability ratings were upwards of $400, and used desks were always ugly (black desktop or white with black/wood veneer legs).
+Moreover, there were a thousand ways to raise and lower these desks, and buying the wrong motor meant a desk that took 5 minutes to move or broke after 2 years.
+
+I wanted a desk that was less than $250, sturdy at any position, raised and lowered quickly, and was nice to look at.
+None of the big brands---Fully, Varidesk, ---fit this niche.
+I settled on the Humanscale Float after seeing it listed on Facebook for $300, a quarter of its retail price.
+This was a gamble because I only found 3 informative reivews online.
+It turns out that obscurity was a good thing, however, and the 3 reviews I found were correct: the Float is an excellent piece of hardware that feels made to last, and an excellent sit/stand desk.
+
+Humanscale, a competitor to Herman Miller for office furniture, embodies a Johnny Ive/Apple minimalism and sells all its products in a mix of white and brushed aluminum.
+This contrasted with all the faux wood other firms offered and worked well with my grey walls, Macbook, and white monitor.
+For motion, the Float employs an elegant pneumatic system for raising and lowering.
+This means no motor to break, and it moves as quickly as you can push or pull it.
+The tension, which controls how easy it is to load and depends on the amount of weight sitting on the desk, was difficult to set initially but really just took some time to break in.
+
+The desk came with a wire holder (essential, honestly), and a cutout for cords to snake through, but no other features.
+Why was it so cheap?
+It turns out that office liquidators got busy during the pandemic and a lot of corporate office parks sold off high-quality furniture like the Float; if you see it near you, definitely consider it.
+
+Humanscale also makes adjustable monitor arms powered by the same pneumatic system as the Float.
+I found two Humanscale M2s for $40, also about a quarter of retail, from a fellow remote worker on Facebook Marketplace.
+These connect with VESA mounts and I was able to attach my 32-inch monitor easily.
+The M2's max holding capacity is 10kgs, so adding one 5kg monitor was trivial.
+One of the new pieces I purchased was a $75 Humanscale laptop holder that attached by VESA connection to the arm.
+I toyed with other mounts, but all looked too flimsy and I worried my laptops would crash to the floor if I used those. (Also, the aesthetic.)
+These arms also include hidden compartments so wires can snake through, some really ingenious design that cleaned up my configuration significantly.
+
+## Keyboard
+
+Of all the research I did for my configuration, finding the perfect keyboard was the most fun.
+Reddit has sub-reddits (and sub-sub-reddits) dedicated to mechanical keyboard, wireless mechanical keyboards, ergonomic keyboards, DIY board, and everything in between.
+I dipped my toes into this pool with the Royal Kludge G68, a beginner board outfitted with full features.
+For those uninitiated, I'll explain the parameters of purchasing a keyboard:
+
+It had switches---the bits of metal below the keycap that register movement as a character pressed---that felt and sounded substantial; when I typed, everyone knew.
+The RK G68 also offered Bluetooth and wireless connection via dongle; the Bluetooth on my XPS conked out long ago, and it was imperative that I could work wirelessly with my work and personal machines.
+Like many mechanical keyboards, its RGB backlit display offered a ton of fun, especially when the New England winters turned dark.
+All this was available for $60, about a quarter of upper mid range boards.
+
+Unfortunatley, the G68 was quite thick and a little garish.
+I traveled with it twice, and was worried both times that its keys would rip right off when my bag shifted.
+This isn't a durability issue---one of the perks of mechanical keyboards is that you can swap out parts when things break or you want to look under the hood---but it always stayed in my head.
+Its white and red exterior was fine but did not fit my Humanscale aesthetic.
+
+Shortly after I purchased the G68, several new keyboards carrying low-profile switches hit the market.
+These offered thinner keyboards meant for travel, or even to sit atop laptops to replace the butterflies.
+I pre-ordered the NuPhy Air60 and waited 3 weeks for it to arrive from Shanghai.
+NuPhy represents a newer Chinese manufacturing posture that has learned state-of-the-art techniques from its contracts abroad but is proud to market itself as a product of Shenzhen.
+
+This board is a work of art, clad in brushed aluminum and about half as thick as the G68.
+It offered the same features as the G68 but featured a more substantial sound, more *thock* than *clack*.
+Plus, the low-profile board meant that it was harder to mis-type a key while moving your fingers across the board, a common habit of new mechanical keyboard immigrants.
+All in all, it offers the feel of a really substantial slim wireless keyboard, with gorgeous added features.
+
+## Mouse
+The world of computer mice is dominated by Logitech, and I did not veer from that course.
+Logitech offers something for every market niche, and I picked up the Triathlon M720 for $40 on Facebook Marketplace.
+The mouse is known for long battery life (the secondhand batteries in mine lasted for 6 months) and performance that matches expectations.
+It too is connected by both Bluetooth and a dongle.
+The best feature I've found is a side button that maps by default to the Windows and Mac window manager applications, allowing me to quickly flit between work.
+Maybe one day I'll purchase one of the vertical mice offered by Microsoft or Logitech, but the Triathlon is a great starter.
+
+## For Travel
+
+When I purchased the NuPhy, I was worried about stashing it in a bag and grating off keycaps.
+NuPhy sells folios for the Air60 aimed at travelers to add some extra comfort. It has a really modern feel and was well worth the $10 they charged at the time.
+
+Additionally, I purchased a NexStand collapsible laptop stand.
+Traveling with a keyboard is useless if the laptop stays at desk level and I had learned from my 2 years working remotely at Yale that my neck was going to rebel if we went back to those days.
+This stand can fit in my waterbottle pocket and holds up to my 16-inch Macbook Pro easily.
+It's height adjusts to several levels and elevates the screen to eye-level.
+I was hesitant to shell out $45, but 2 days with it made it worthwhile.
+
+After all was said and done, I had a 32-inch 4k monitor, my laptop of the day, a keyboard, mouse, and a bunch of Humanscale components that all fit the same aesthetic.
+It's been 4 months since I had all the parts together, and I feel more comfortable working longer hours than I worked at Yale.
