@@ -1,5 +1,5 @@
 ---
-title: What I use to work remotely
+title: How I work remotely
 author: corey
 date: 2022-11-18
 categories:

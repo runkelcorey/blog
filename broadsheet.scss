@@ -3,13 +3,13 @@
 
 // Typography
 
-$font-family-sans-serif:    "Alegreya Sans SC", sans-serif !default;
+$font-family-sans-serif:    "Alegreya Sans", sans-serif !default;
 $font-family-monospace:     "Fira Code", monospace !default;
-$font-family-base:          "Alegreya", serif !default;
+$font-family-base:          "Alegreya Sans", sans-serif !default;
 
-$headings-font-family:      "Fira Sans Condensed", sans-serif !default;
+$headings-font-family:      "Alegreya Sans SC", sans-serif !default;
 $headings-font-style:       italic !default;
-$headings-font-weight:      800 !default;
+$headings-font-weight:      700 !default;
 
 $input-btn-font-family: $font-family-sans-serif !default;
 
@@ -20,7 +20,7 @@ $input-btn-font-family: $font-family-sans-serif !default;
 
 // Variables
 
-$web-font-path: "https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,300;1,300&family=Alegreya:ital@0;1&family=Fira+Code&family=Fira+Sans+Condensed:ital,wght@0,800;1,800&display=swap";
+$web-font-path: "https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,500;1,500&family=Alegreya+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap";
 @if $web-font-path {
   @import url($web-font-path);
 }
