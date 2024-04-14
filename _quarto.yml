@@ -15,6 +15,3 @@ format:
   html:
     theme:
       [simplex, broadsheet.scss]
-
-
-
