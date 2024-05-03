@@ -1,0 +1,55 @@
+---
+title: The flow state in running and coding
+author: corey
+date: 2024-04-27
+categories:
+  - data
+editor_options: 
+  markdown: 
+    wrap: sentence
+---
+
+Trail running and code writing share a concept of the **flow state**.
+Many other crafts share this concept, but I both run and code so I'll keep the focus here for today.
+The flow state is a level of immersion in the craft that blocks out the rest of the world, leaving the crafter focused on the craft.
+It's dramatized in ads for new running shoes and movies like *The Social Network*, where montages show programmers glued to their screens and their keys, resulting in prodigious work output.
+
+I love reaching this feeling when I run on trails.
+I'll come back from a 2-hour run to the confusion of my partner who asks *weren't you bored?*
+She's referring to the fact that I'm usually bouncing around our apartment looking for mental stimulation, so 2 hours without music or a running partner seems to her like it must feel like an eternity to me.
+
+The truth is, it's hard to run on trails without breaking an ankle.
+The safe practice of trail running requires the brain to be working just enough that it can't really concentrate on anything else.
+I end these runs feeling refreshed, like I just meditated for a while.
+In fact, I feel **better** than if I had just meditated, because I find it really hard to flick my thoughts away when I'm sitting still.
+
+The flow state is a state where I don't need to think, I can be content just doing.
+I strove for this feeling coding, too---I even follow [a newsletter devoted to this feeling](https://www.flowstate.fm/).
+I felt like I achieved it frequently; like Jesse Eisenberg in *The Social Network*, my fingers were sprinting from key to key and I'd look up after what felt like 10 minutes to find it had been an hour.
+
+But then I read *The Clean Coder* by Robert C. Martin.
+I won't do a book review here because the internet's littered with them, but what he had to say about this prized flow state realy changed my thinking:
+
+>Here’s a little hint from someone whose been there and back: Avoid the Zone. This state of consciousness is not really hyper-productive and is certainly not infallible. It’s really just a mild meditative state in which certain rational faculties are diminished in favor of a sense of speed.
+
+Here, Martin adds something to my connection to trail running!
+It's a *sense of speed*, not even necessarily actual speed, and it's facilitated by a *mild meditative state*.
+For me, this flow is okay in running because I do it recreationally and not to hit specific goals or run specific routes.
+
+>Code written in the Zone may come out faster, but you’ll be going back to visit it more.
+
+I felt the tunnel vision this week as I sprinted to finish up a project on time.
+It's a precarious feeling because you know that the normal tests haven't been written and re-written.
+
+Martin does offer an antidote to this state, which I have tried.
+The Pomodoro Technnique is another internet subculture that you can explore yourself but, essentially, the idea is that you work 25 minutes, then take 5 off, and repeat all day.
+**You must take the 5 minutes, even if you're in the middle of something.**
+This is the key to the technique: it splits up feelings of work, both good and bad, in order to set a more sustainable cadence.
+I've found that, counterintuitively, the 5 minutes makes the 25 more productive.
+I'm less apt to check my phone because I know respite is coming.
+
+Plus, in an age of hyperactivity, carving deep grooves in time for one activity ends up feeling empowering in a new way.
+It's different from the feeling of speed, more like a feeling of control.
+
+My recommendation: give it a try; if you're on macOS, [`tomatobar`](https://github.com/ivoronin/TomatoBar) is an awesomely simple interface.
+I write my tasks in Google calendar (they always take 30 minute blocks) and then sync the timer to the tasks.
