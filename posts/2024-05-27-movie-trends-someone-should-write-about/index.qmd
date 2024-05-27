@@ -1,0 +1,36 @@
+---
+title: 2 movie trends someone should write about
+author: corey
+date: 2024-04-27
+categories:
+  - film
+  - lists
+editor_options: 
+  markdown: 
+    wrap: sentence
+---
+
+Watching movies made since the 1930s and reading tons about 20th century American history have let me notice some trends that I don't fully understand.
+I'd like to write about all of these, but I can't seem to find a way in:
+
+## 1. Mid-century transatlanticism
+![Cary Grant in *North by Northwest*](https://s26162.pcdn.co/wp-content/uploads/2023/03/cary-Grant-nbnw.jpg)
+
+After World War II, the US and UK enjoyed a brief but intense period of economic growth and political consensus; old folks call this "the good ol' days" (even if it did exclude women and most everyone who wasn't white and christian).
+In movies, I see this represented as characters with both confidence and wealth, as well as treatments of technology as magic that represent progress.
+Cary Grant in *North by Northwest* (1959) exemplifies this idea with his Transatlantic accent.
+The James Bond movies() also show this, with its gadgets and its cooperation between MI6 and the CIA.
+It's skewered, in turn, by Jaques Tati's *Playtime* (1960); this is a French movie but it features American tourism and technological optimism at every turn.
+
+
+## 2. Anti-corporate 1990s
+![*Office Space* (left) and *The Matrix* (right)](https://media.salon.com/2018/07/matrix-office-space-embed.jpg)
+
+In the late 1990s, a raft of movies took aim at the US' intense work culture and, specifically, the drudgery of large businesses.
+What's fun about this trend is its stylistic diversity: *The Matrix* (1999) is in this category, and so is *Office Space* (1999).
+
+::: {.column-margin}
+Apparently, [someone's already pointed this connection out](https://www.salon.com/2018/07/15/the-matrix-is-basically-a-sci-fi-office-space/)!
+:::
+
+Both of these trends have an economic and corporate component to them and I'd like to explore what they say about the 20th century.
