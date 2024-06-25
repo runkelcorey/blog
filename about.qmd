@@ -13,19 +13,17 @@ about:
     - icon: github
       text: Github
       href: https://github.com/runkelcorey
-    - icon: file-person
-      text: Résumé
-      href: files/resume.pdf
-resources: files/resume.pdf
 ---
 
-I am a Data Analyst at Kin + Carta, a digital transformation consultancy; I am based in Cambridge, MA.
-I create dashboards that visualize spatial data and explain statistical models.
+I am a Data Scientist at [Valtech](https://www.valtech.com/) (formerly Kin + Carta, formerly Cascade Data Labs), an experience innovation consultancy.
+There, I use daily sales forecasts of breakfast food to help retailers meet their demand. I automate data-quality testing and code linting. And I lead small teams that build dashboards to visualize spatial data and explain statistical models.
 
-Off the clock, I climb, cycle, [watch movies made in bygone times](https://letterboxd.com/runkelcorey/), and [read histories of ideas and institutions](https://www.goodreads.com/user/show/112898051-corey-runkel).
+Off the clock, I climb, [cycle](https://www.strava.com/athletes/112339572), [watch movies made in bygone times](https://letterboxd.com/runkelcorey/), and [read histories of ideas and institutions](https://www.goodreads.com/user/show/112898051-corey-runkel).
 
 From 2020 to 2022, I was a Research Associate at the [Yale Program on Financial Stability](https://som.yale.edu/centers/program-on-financial-stability) in New Haven, CT.
 There, I wrote [histories](https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=3264284) of financial crises, framed by the policies created to fight them.
 
 Before Yale, I graduated from the University of Virginia, where I double majored in Political \& Social Thought and Economics.
-I wrote a thesis estimating the impact of home price depreciation on voting outcomes, and worked with the UVA School of Architecture to improve transit outcomes in central Virginia.
+I wrote a [thesis](https://runkelcorey.github.io/projects/thesis/actors-motive.html#header) estimating the impact of home price depreciation on voting outcomes, and worked with the UVA School of Architecture to improve transit outcomes in central Virginia.
+
+I am based in Cambridge, MA.
