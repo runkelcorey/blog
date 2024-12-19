@@ -1,0 +1,34 @@
+---
+title: Is restoring my bike worth it?
+subtitle: "Restoring Wester Ross Frame 075"
+author: corey
+date: 2024-12-19
+draft: true
+categories:
+  - cycling
+editor_options: 
+  markdown: 
+    wrap: sentence
+---
+
+How much rust is too much?
+I need to answer this question before I invest time and money in restoring my Wester Ross road bike: if the frame is, or will soon be, compromised by oxidation, then my restoration won't be rideable!
+Ideally, I'd make my decision by weighing the expected enjoyment I'd get out of a restored bike against the expected cost of its restoration and proceed with restoring if $E[enjoyment] > E[cost]$.
+With the internet, the costs are easy to estimate:
+
+| component            |       cost |
+|----------------------|-----------:|
+| Sandblasting         |       $100 |
+| Powdercoating        |       $300 |
+| Adding mount points  |       $200 |
+| Decals               |        $20 |
+| New cables & housing |        $30 |
+| New saddle           |       $100 |
+| New bottom bracket   |        $40 |
+| Fenders & tires      |       $150 |
+| New cassette         |        $60 |
+| Rust protection      |       $100 |
+| Racks & bags         |       $300 |
+| **Total**            | **$1,400** |
+
+For \$1,400, I'd want at least 5 years of use out of the frame.
