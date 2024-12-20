@@ -3,7 +3,6 @@ title: Is restoring my bike worth it?
 subtitle: "Restoring Wester Ross Frame 075"
 author: corey
 date: 2024-12-19
-draft: true
 categories:
   - cycling
 editor_options: 
@@ -31,4 +30,46 @@ With the internet, the costs are easy to estimate:
 | Racks & bags         |       $300 |
 | **Total**            | **$1,400** |
 
-For \$1,400, I'd want at least 5 years of use out of the frame.
+I first think about what else I could buy for \$1,400: another beautiful old bike, perhaps one that accepts centerpull brakes, 40mm tires, and 650b wheels.
+In other words, a frame better suited to my frame and my life.
+But that's why I have 2 bikes.
+As bikesnobnyc has said, sometimes the sacrifices of a road bike are all you need.
+Anyways, back to the bike at hand: for \$1,400, I want at least 5 years of use out of the frame.
+I probably ride the bike 50 times a year, so 5 years would make 250 rides at the cost of \$5.6 per ride.
+
+It feels perverse to commodify each ride; part of why I like riding bikes is that, once you're on, it's free---free to ride, free to park, freeing to go fast.
+But even a free bike doesn't cost nothing.
+There's maintenance, gear that you wouldn't own but for the bike, places you wouldn't eat if you didn't ride there.
+Every so often, summing the costs makes sense.
+
+However, my intent to ride for 5 years is not the relevant question.
+The relevant question is *can* I ride this bike for 5 years?
+In 2025, this bike will be half a century old, plenty of time for rust to do its work.
+For those unfamiliar, steel frames are basically good for life---unless they crash or rust.
+
+Rust is a tricky thing to evaluate.
+You can see when it's **not** there but when it is there it's not clear how much rust there is.
+Has the rust infiltrated the tubing, with the only thing keeping the frame from cracking in half the binding force of paint and dirt compacted over decades?
+If so, the bike will soon be toast, worth only its components.
+
+Of course, seeing infiltration means seeing inside the tubing, which really isn't possible without taking apart the frame.
+Luckily, Redditors have developed ways of detecting the latent oxidation.
+Here's 3:
+1. Tap the frame with something metal. Rusted out spots should sound quite different than the rest.
+2. Peer down the seat tube.
+3. Rub a wire brush along the rusted spots to see what all comes off and get a closer look at possible pitting.
+
+I tried all of these tonight at the Somerville Bike Kitchen with mixed results.
+Tapping the frame yielded pretty much nothing, as the change in tube diameters confounds what differences there may be in rusted spots.
+I suppose this might work for really serious cases but not for moderate ones, which is where I figured I might be.
+
+Peering down the seat tube was actually a huge relief.
+Not only did it look okay, there was actually a really shiny piece at the bottom!
+Turns out this bike got a cartridge bottom bracket replaced recently and it looks even more recent than my purchase.
+I couldn't see below the bottom bracket (of course) which would have told me about rust there.
+That would have helped because its there were you'd expect the most moisture to collect.
+
+Rubbing a wire brush has its expected limitations---you don't learn about the inside---but fellow bike chefs said it didn't look bad.
+With all this knowledge, all that's left is the ultimate test of removing the bottom bracket!
+Stay tuned for another post describing my plan for this restoration.
+I had already scoped out the work needed to give this bike all the glory it deserves, so I would have been heartbroken to see it scuttled.
