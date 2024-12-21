@@ -1,0 +1,76 @@
+---
+title: "Does Open Data Exist on Somerville's Concrete-Block Garages?"
+format: html
+author: corey
+---
+
+I started looking for data on Somerville's concrete-block garages at the Somerville Historical Commission.
+These structures define Somerville for me because they seem to stick out behind or next to or beneath every house in the city.
+The Historical Commission assured me that the city didn't have any data on the detached garages.
+Instead, they recommended I look at the Library of Congress' archive of Sanborn Fire Insurance maps.
+
+Before I did that, however, I thought I'd look into the open data that the city publishes:
+* buildings
+* tax parcels
+* impervious surfaces
+
+## Buildings
+
+```{r}
+library(tidyverse)
+library(sf)
+library(gt)
+```
+
+```{r}
+temp <- tempfile()
+tdir <- tempdir()
+download.file("https://data.somervillema.gov/download/uzdd-gyjv/application%2Fx-zip-compressed", temp)
+unzip(temp, exdir = tdir)
+buildings <- st_read(paste0(tdir, "/Buildings.shp"))
+```
+
+```{r}
+head(buildings)
+```
+
+```{r}
+plot(st_geometry(buildings[c(1:50),]))
+```
+
+## Tax parcels
+
+```{r}
+temp <- tempfile()
+tdir <- tempdir()
+download.file("https://data.somervillema.gov/download/gw4w-w7cw/application%2Fx-zip-compressed", temp)
+unzip(temp, exdir = tdir)
+parcels_data_source <- paste0(tdir, "/M274_parcels_CY23_FY24_sde.gdb")
+st_layers(parcels_data_source)
+```
+
+First, let's try `M274TaxPar`; that's what this dataset *should* be about, though I know that the assessment data can be more fully featured.
+
+```{r}
+parcels <- st_read(parcels_data_source)
+head(parcels)
+```
+
+Okay, it looks like this contains distinct buildings, which is good. What's not so good is that it doesn't tell us what material a building is made of.
+Maybe the assessment data will tell that story:
+```{r}
+assess <- st_read(parcels_data_source, layer = "M274Assess")
+gt(head(assess))
+```
+
+Jackpot.
+Note the grain of this file: it's each building within each parcel.
+This grain is important because it allows us to distinguish (detached) garages from the main buildings in tax parcels.
+
+```{r}
+assess %>%
+filter(grepl("Garage", STYLE)) %>%
+head() %>%
+gt() %>%
+tab_header(title = "FY24 Assessment Data")
+```

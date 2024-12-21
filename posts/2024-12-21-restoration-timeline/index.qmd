@@ -1,0 +1,112 @@
+---
+title: How to Restore a Bike
+subtitle: "Restoring Wester Ross Frame 075"
+author: corey
+date: 2024-12-21
+categories:
+  - cycling
+editor_options: 
+  markdown: 
+    wrap: sentence
+from: markdown+emoji
+---
+
+The weekend before I married Claire, I was awash with nerves.
+When I'm restless, I reach for my pen; I find writing taxing enough that it tends to calm me down.
+That weekend, I wrote out a plan to restore my Wester Ross bicycle.
+
+As I wrote [earlier this week](../2024-12-19-rust-assessment-checklist/index.qmd), I'm restoring my first bicycle to the glory it deserves.
+In 2026 or 2027, I want to ride [l'Eroica](https://eroica.cc/en/eroica-cc/ethos) on this bike, so aesthetics and period-correctness are paramount.
+That means sacrificing a smaller wheelset (which would probably fit my size better), different brakes (which would fit fenders more easily), and easier gearing (which would require removing a gorgeous Campagnolo crankset).
+But it also means I get to revel in old (and old-looking) touring gear since this bike features (one of?) the only touring groupsets made by Campagnolo.
+
+It's a fun goal with a lot of work in between.
+How can I make it happen?
+I have a tendency to lose steam halfway through a project, so I want to be realistic about how much effort this will take as well as find intermediate stopping points that leave me with a rideable bike.
+I find timelining with a [Gantt chart](http://mermaid.js.org/syntax/gantt.html) helpful for stuff like this.
+All timelines end up wrong but, to appropriate [George Box's quote about models](https://en.wikipedia.org/wiki/All_models_are_wrong), some timelines prove useful.
+
+This plan will let me know if I'm losing steam, estimate how much is left, and help others share in my ideas.
+Also I love mermaid diagrams :grinning:
+
+You'll quickly notice that Tuesdays and Thursdays are the only open days on this chart and all work marked `SBK` occurs then.
+That's because my local bike co-op, the [Somerville Bike Kitchen](https://somervillebikekitchen.org/), only runs open shop on those days.
+The space, tools, and experience of the staff are what gives me the confidence in completing this project: when I say to them that I want to restore it, they either get really pumped up or they take it in stride; no one second guesses that it'll be too difficult.
+
+```{mermaid}
+gantt
+  axisFormat %b %d
+  tickInterval 1week
+  excludes monday, wednesday, friday, weekends, 2025-03-06
+  todayMarker off
+  section legend
+    home :active, 2024-12-25, 2025-01-01
+    SBK :2024-12-25, 2025-01-01
+    vendor :crit, 2024-12-25, 2025-01-01
+  section Disassembly
+    Wheels, seatpost, saddle :active, 2025-01-01, 1d
+    Cables, housing, brakes, stem, handlebars :2025-01-07, 1d
+    Fork, chain, derailleurs :1d
+    Crank and bottom bracket :1d
+  section Frame work
+    Sandblast :crit, 2025-01-16, 2025-01-21
+    Add mount points :crit, 2025-01-23, 2d
+    Powdercoat :crit, 1d
+  section Rehab components
+    True wheels :2025-01-21, 3d
+    Replace tires :active, 2025-01-29, 2025-01-30
+    De-rust small parts :2025-01-30, 3d
+    Replace bottom bracket, crank, cables, housing :1d
+  section Re-assembly
+    Chain, derailleurs :3d
+    Fork, brakes :1d
+    Wheels, seatpost, saddle :active, 1d
+  1st ride :milestone,
+  section Cosmetics
+    Apply decals :active, 1d
+    Install rear fender :2d
+    Cut front fender :1d
+    Install front fender :1d
+```
+
+Following this timeline, I'll be finished before my trip to Italy in late March.
+Avoiding a long trip in the middle would help me keep momentum.
+Plus, I expect my trip will influence my taste and maybe introduce me to bike brands I don't know about.
+
+My goal is that this timeline doesn't end up being very strict.
+Consulting has taught me to always pad your timelines---doubling them being the recommendation---and to cut each task as small as possible to make it more defined and easy to estimate.
+I've done that here where I feel less comfortable with the amount of time each task will take, for instance stretching the wheel truing process to 3 work days.
+Other tasks, like replacing the tires, I've kept as single-day tasks since I feel confident about the work involved.
+I've also left some time for other activities--dinner, drinks, movies, cozying up in front of Netflix---on Tuesdays and Thursdays.
+
+Building out a plan as precise as this makes some dependencies very clear and surfaces a few questions to research further.
+
+### Dependencies
+
+1. Contact vendors to ensure that they can accept and turn around work in time. I plan to use [Pike Powder Coating](https://pikepowdercoating.com/) for sandblasting and painting and leave the mounting points for [Royal H Cycles](https://royalhcycles.com/) to add on. I've contacted them in the past to estimate their timelines but need to follow up now.
+2. Purchase components that I plan to replace
+    - bottom bracket (can't purchase until I can inspect the shell)
+    - chain
+    - tires: 27" x 1 1/8", which is 1/8" narrower than my current selection; the 35mm fenders that will fit beneath my brakes demand tires no wider than 30mm
+    - cables
+    - cable housing
+    - Selle Anatomica saddle
+    - decals
+    - bolts: I'll try to change as many as possible to one size head
+3. Purchase SBK membership so that I stop feeling bad using them without paying
+3. Purchase solutions that SBK doesn't have
+    - EvapoRust
+    - rust preventer
+4. Purchase fenders
+
+
+### Open Questions
+
+1. What mount points can and should be installed?
+2. Can I cut fenders myself or could Royal H do that as well?
+3. How can I figure out what I'm missing? I don't have a restoration expert on call, so talking through each plan with the relevant vendor or SBK staff, with online fora for more niche topics, is probably my best bet
+4. Can I make the gearing any easier?
+5. What *exact* parts do I need?
+6. Do I need more or different parts to stabilize the rear brake, which refuses to stay centered?
+7. How can I print the decals available on the Wester Ross Cycles Facebook group?
+8. Will Pike Powder Coating let me split sandblasting and powder coating into 2 stages so that mounting points can be added?
