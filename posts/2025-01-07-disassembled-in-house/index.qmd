@@ -1,0 +1,89 @@
+---
+title: Disassembled In-House
+subtitle: "Restoring Wester Ross Frame 075"
+author: corey
+date: 2025-01-08
+categories:
+  - cycling
+editor_options: 
+  markdown: 
+    wrap: sentence
+from: markdown+emoji
+---
+
+Somerville Bike Kitchen was closed last week, so I started my bike disassembly in my apartment basement, where the floors are dirty enough that I don't mind spilling some grease on it.
+Shout out to my neighbor for the bike stand!
+
+![My basement workshop](images/workshop.JPG)
+
+To remind y'all, I started with this.
+
+![My bike, four years ago](images/bike_2020.jpg)
+
+After four years, it started showing lots of rust (luckily, this seems [limited to the surface](../2024-12-19-rust-assessment-checklist/index.qmd)).
+
+![Rust](images/rust.JPG)
+
+Keeping with [my timeline](../2024-12-21-restoration-timeline/index.qmd), I started by removing the wheels and seatpost, simple stuff that I finished in 10 minutes between work and Claire returning.
+
+![The bike after wheel removal](images/frame_1.JPG)
+
+I also took the advantageous position and chillness of time to snap some detail shots.
+It's these that remind me of the beauty of this bike and, ultimately, why I'm restoring it.
+
+::: {.layout-ncol=3}
+
+![Campagnolo Rally derailleur](images/derailleur.JPG)
+
+![Friction shifter](images/shifters.JPG)
+
+![Huret clamp](images/huret.jpg)
+
+:::
+
+Like, this thing just reeks of style.
+[Other internet fiends](https://www.bikeforums.net/classic-vintage/1144639-what-s-deal-campagnolo-rally.html) say that the Campagnolo Rally derailleur was the company's greatest; I'm sure that's impossible to judge but knowing this opinion has fed my bike ego.
+It recalls the lettering on American muscle cars and turns out to be from [a great French derailleur manufacturer](https://midlifecycling.blogspot.com/2014/12/my-first-piece-of-jewelry-huret-jubilee.html) that was purchased by a SRAM subsidiary in the 1980s.
+Campagnolo must not have made clamps because this, the bottom bracket, and the handlebars are the only components on this bike that aren't from them.
+
+My basement also afforded some relative warmth while it was 16F and blowing 20mph yesterday morning.
+So, I donned [my Reluctant Threads apron](https://reluctantthreads.com/pages/reluctant-threads-apron-trading-story).
+
+![Reluctant threads apron](images/apron.JPG)
+
+And I continued with removing brakes and their cables from the frame.
+The brakes were way more torqued on than I expected and it took what felt like all my force to free them from the fork and rear bridge.
+
+::: {.callout-tip}
+## 2 key, simple pieces of advice I picked up on Reddit
+
+1. keep the small components assembled as much as possible
+2. photograph everything
+
+I appropriated some masking tape to mark where things entered the components; I'm sure future Corey will appreciate it.
+I want to clean and de-rust these components but unclear how I should approach it: immerse all the components in penetrating oil? bathe them in citric acid powder, which BMX riders use to keep their chrome chromed? or just take rags to everything and spray it all with de-greaser at the end?
+If you have a perspective on this, let me know!
+
+:::
+
+After they were off, I got a proper feeling for how these brakes work.
+The spring is surprisingly strong but their operation felt smooth:
+
+![Hand clamping and releasing brake](images/brakes.GIF)
+
+I also took the handlebars off.
+Not much to say there, this was an easy operation as it's a quill stem.
+After an hour, I had greasier hands,
+
+![Greasy hands](images/dirty-hands.JPG)
+
+a bucket of parts,
+
+![Bucket of parts](images/bucket-of-parts.JPG)
+
+and a de-braked frame.
+
+![De-braked frame](images/de-braked-frame.JPG)
+
+Next up: derailleurs, chain, and fork.
+I need to find a good way to store these parts that will be fine getting greasy.
