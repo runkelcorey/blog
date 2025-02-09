@@ -1,0 +1,41 @@
+---
+title: My open-source renaissance
+author: corey
+date: 2025-01-19
+draft: true
+categories:
+  - open-source
+  - R
+editor_options: 
+  markdown: 
+    wrap: sentence
+from: markdown+emoji
+---
+
+When I was a researcher at Yale, I got deep into the open-source software lore, reading *The Cathedral and the Bazaar* in addition to a hundred plain-text websites from the 1990s.
+Inspired, I also started writing a bit of R software myself.
+
+1. registeR, a package to scour the Federal Register
+2. ggypfs, a color palette for my lab at Yale
+3. valet, an R client to the Bank of Canada's API
+
+In the hype, I took stewardship of the rOpenSci library `federalregister` since I had already published in the area.
+I figured that would be the easiest way to keep an ongoing presence in open-source once I started my job at Valtech (f/k/a Kin + Carta [f/k/a Cascade Data Labs]).
+Well, it's 3 years later and I haven't touched any of them.
+
+One of my resolutions for 2025 is to maintain them, so, today, I'm starting an inventory of each package.
+For each of these packages, I want to learn:
+
+- does it still run?
+- does it use deprecated methods?
+- is the documentation consistent with the functionality?
+
+I'm starting with the rOpenSci library since I feel some responsibility to maintain it, given that I asked to take it over from a different maintainer.
+
+## `rOpenSci/federalregister`
+
+### Does it still run?
+
+When I took a look at the directory I immediately noticed there were no tests!
+Writing some would be a great opportunity to poke around the functionality of this package and, if they fail, to practice test-driven development.
+
