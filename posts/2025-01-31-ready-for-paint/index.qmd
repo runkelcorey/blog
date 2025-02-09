@@ -2,8 +2,7 @@
 title: Ready for paint!
 subtitle: "Restoring Wester Ross Frame #015"
 author: corey
-date: 2025-01-31
-draft: true
+date: 2025-02-09
 categories:
   - cycling
 editor_options: 
@@ -55,14 +54,13 @@ gantt
   excludes monday, wednesday, friday, weekends
   todayMarker off
   section legend
-    home :active, 2025-01-23, 2025-01-29
-    SBK : 2025-01-23, 2025-01-29
-    vendor :crit, 2025-01-23, 2025-01-29
+    home :active, 2025-02-01, 2025-02-08
+    SBK : 2025-02-01, 2025-02-08
+    vendor :crit, 2025-02-01, 2025-02-08
   section Frame work
-    Sandblast :crit, 2025-01-30, 2d
-    Powdercoat :crit, 2d
+    Sandblast & powdercoat :crit, 2025-01-30, 1d
   section Rehab components
-    De-rust small parts :2025-02-04, 3d
+    De-rust small parts :2025-02-11, 3d
     Replace bottom bracket, crank, cables, housing :2d
   section Re-assembly
     Chain, derailleurs :1d
@@ -71,7 +69,6 @@ gantt
   1st ride :milestone, 1d
   section Cosmetics
     True wheels :2d
-    Install rear fender :2d
     Add mount points :crit, 1d
     Cut fenders :crit, 1d
     Install fenders :2025-03-31, 1d
@@ -91,7 +88,7 @@ These retail for about $200 today and their design hasn't changed since the 1970
 My first thought when I took this out was actually a four-letter word (or several) because my original plan was to replace whatever was installed with a $40 Velo Orange cartridge.
 Its pedigree demands somewhat better treatment instead.
 As snobby as that sounds---and it most definitely is snobby---take a look at this thing:
-![Phil Wood bottom bracket: the signature is the only marking on the entire device.]()
+![Phil Wood bottom bracket: the signature is the only marking on the entire device.](images/bottom_bracket.jpg)
 
 All these parts make me curious about who owned this bike before me because I can't imagine a more expensive build.
 I thought about what everything from the component manufacturers would cost in today's dollars and here's what I got.
@@ -113,3 +110,7 @@ I am missing some of the brands and lots are ranges but here's the guess:
 | **Total**                     | **$4,000-$6,500** |
 
 In 1975 dollars, that would equate to \$700-\$1,100, amazing for a bike for which I paid $400 in 2020.
+
+Anyway, here's the bike, all stripped of components and ready for paint.
+
+![Blank frame](images/prepaint.jpg)
