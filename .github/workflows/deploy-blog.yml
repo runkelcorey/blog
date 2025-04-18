@@ -9,6 +9,13 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
+      - name: Generate GitHub App token
+        id: generate-token
+        uses: actions/create-github-app-token@v1
+        with:
+          app_id: ${{ secrets.DEPLOY_BLOG_APP_ID }}
+          private_key: ${{ secrets.DEPLOY_BLOG_PRIVATE_KEY }}
+
       - name: Checkout blog source
         uses: actions/checkout@v4
         with:
@@ -29,6 +36,8 @@ jobs:
 
       - name: Commit and push
         working-directory: blog-deploy
+        env:
+          GITHUB_TOKEN: ${{ steps.generate-token.outputs.token }}
         run: |
           git config user.name "Corey N. Runkel"
           git config user.email "runkelcorey@gmail.com"
