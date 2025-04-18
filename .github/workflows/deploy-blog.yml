@@ -1,0 +1,37 @@
+name: Deploy Blog to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout blog source
+        uses: actions/checkout@v4
+        with:
+          path: blog-source
+
+      - name: Checkout destination repo
+        uses: actions/checkout@v4
+        with:
+          repository: runkelcorey/runkelcorey.github.io
+          path: blog-deploy
+
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+
+      - name: Render blog
+        working-directory: blog-source
+        run: quarto render --output-dir ../blog-deploy
+
+      - name: Commit and push
+        working-directory: blog-deploy
+        run: |
+          git config user.name "Corey N. Runkel"
+          git config user.email "runkelcorey@gmail.com"
+          git add .
+          git commit -m "Deploy blog update from ${GITHUB_SHA}"
+          git push
