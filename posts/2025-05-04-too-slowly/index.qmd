@@ -1,0 +1,41 @@
+---
+title: Too slowly, as it turns out
+subtitle: "Restoring Wester Ross Frame #015"
+author: corey
+date: 2025-05-04
+categories:
+  - cycling
+editor_options: 
+  markdown: 
+    wrap: sentence
+from: markdown+emoji
+---
+
+I realized last Thursday that Wester Ross #015 would not be ready for the Somerville Bike Pageant.
+It was 8:45p, Somerville Bike Kitchen was closing at 9p, and I could not get a tire seated on my wheel.
+Without the tire seated, I couldn't use the chain tool to close up the new Izumi chain I purchased.
+Even if I had finished those 2 things, I still hadn't attached and adjusted my downtube shifters.
+
+Wanting other anxieties than my bike, I decided not to continue with the Mad Dash to a pageant-ready bike.
+Instead, I took the weekend off:
+
+- walking(!) around town
+- perusing bike pageant entries (shout out to the pennyfarthing with the handlebar iPhone mount)
+- searching for the right commuter bike for Claire, who hauls a bunch of shit every time she goes to work, and wears flowy pants with abandon
+
+The Mad Dash did grant me some perspective on the work still to-do, however.
+For starters, I learned that you should not apply decals after powdercoating.
+This was unfortunate news, as I had paid international shipping for H Lloyd decals of the [Wester Ross logos](https://hlloydcycles.com/en-us/pages/search-results-page?q=Wester%20ross) and Reynolds 531 tubing for maximum period correctness.
+On the plus side, I learned that my 50 year-old pedals are easier to service than a headset.
+I was wary to submerge the pedals entirely into degreaser or Evaporust because I assumed---from what I read online about old bikes generally---that these pedals had effectively single-use bearings.
+
+However, after feeling the bearings since my conservative cleaning approach, I decided to look into the issue.
+Some nut online has compiled [an overly thorough guide](https://cycling-obsession.com/how-to-service-vintage-campagnolo-pedals/) to servicing these very pedals and, with no deadlines still looming, I decided that I'll extend my restoration by taking these apart and fixing them up proper.
+
+On a similar note, I've taken another look at my wheels.
+They somehow survived living on my balcony unmoved for the winter with no loss in mobility but acquired a nice stubble of rust that I'd like to remove.
+The aforementioned nut also has [a guide to these hubs](https://cycling-obsession.com/how-to-service-vintage-campagnolo-hubs/), so I'm more serious about removing the rust than I previously was.
+
+I mentioned my tire seating plight to a reader who suggested, more out of a reflexive admiration for retro mods than relevance, to keep the hubs but convert the (non-Campy) rims from 27" (630mm) to 700c (622mm).
+This thought has caught my eye too: losing 4mm under the brake bridge might make uncut fenders a possibility (even with 30mm+ tires!).
+Of course, according to my foolish interest in keeping original parts, such a conversion hinges on the brake pads being able to move 4mm down in their current housing, something in which I'm not at all confident.
