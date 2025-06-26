@@ -1,0 +1,51 @@
+---
+title: How far can we stretch the AI revolution metaphor?
+author: corey
+date: 2025-06-26
+categories:
+  - essay
+  - ai
+editor_options: 
+  markdown: 
+    wrap: sentence
+from: markdown+emoji
+draft: true
+---
+
+Sometimes you read an essay and can't get over its title.
+This week, that essay was [*Why Even Try if You Have AI?*](https://www.newyorker.com/culture/open-questions/why-even-try-if-you-have-ai) This one hit me harder and harder the more I read it.
+The article was good---go read it---but from it departed an even greater train of thoughts.
+
+The author wonders if AI is removing the fulfillment from our lives by reducing trial and error, a core experience for learning, and links to studies on human learning and satisfaction.
+When I read that title, it immediately called to mind David Graeber's [*What's the Point if We Can't Have Fun?*](https://thebaffler.com/salvos/whats-the-point-if-we-cant-have-fun), an essay that acknowledges the fact that animals play and argues that play motivates \[at least many animals'\] action.
+I read Graeber's essay right around when I read his work on bureaucracy, highlighting the vast (and increasing?) amount of work that doesn't reward creativity or exploration.
+::: {.column-margin} See *Bullshit Jobs* and *The Utopia of Rules* ::: I couldn't help but contrast his positive account of animals playing with the negative accounts of monotonous work.
+
+I also couldn't help but connect his accounts of bureaucracy to Max Weber's concept of the ["iron cage"](https://en.wikipedia.org/wiki/Iron_cage).
+Weber was a German writer who's now considered one of the founders of sociology; he introduced the concept after [decades of mechanization and electrification replacing people's labor](https://en.wikipedia.org/wiki/Industrialization_in_Germany).
+Weber didn't have much to say about people's experience with monotony and bureaucratized work but you may recall that Marx and Engels were writing in Germany a few decades earlier, with Marx making a more humanistic case in [*The Economic & Philosophic Manuscripts of 1844*](https://en.wikipedia.org/wiki/Economic_and_Philosophic_Manuscripts_of_1844).
+In short, German workers were not happy their labor was being mechanized and electrified.
+There's a story there about low wages and unsafe conditions---which is absolutely true---but the train of thought we're on doesn't stop at those stations.
+It goes express, a bit further, to the dissatisfaction workers felt at becoming minders of machines.
+
+The next stop is an anecdote from Rebecca Solnit's [biography of Edweard Muybridge](https://en.wikipedia.org/wiki/River_of_Shadows).
+Solnit recounts a French painter trained in scientific painting, who sees Muybridge's *The Horse in Motion*.
+
+![](https://upload.wikimedia.org/wikipedia/commons/d/d2/The_Horse_in_Motion_high_res.jpg)
+
+The painter had spent his whole life honing his craft, valuing himself on his precision, when he realized that he had been painting horses in motion the wrong way.
+Scientific painting was a big profession then, as was illustration and engraving.
+After seeing what Muybridge did in 2 hours with his camera, the painter retired and scientific painting quickly faded as a style.
+More broadly, realism in painting and illustration declined in value---financial value, prestige, and academic importance---as photography became more widespread and more able.
+Elsewhere in the Industrial Revolution, men reluctantly entered the factory floor because minding machines was seen as something women were better suited to do.
+People, regardless of their gender, found the factory line stultifying and, as Marx wrote, alienating.
+
+I think it's clear now where this train terminates.
+I'm not scared of SkyNet-like AI; I'm scared that, in pursuit of production and public value, I'll stop enjoying what I do.
+Writing English and simple, performant code are 2 of my strongest professional skills and, yet, Copilot has shown me it can do both passably in some cases and way better in others.
+Developing those skills, feeling (briefly) virtuosity when applying them well, are a huge part of why I do what I do but I anticipate fewer rewards for those skills if everyone---even the no one that is an AI agent---has access to them.
+To be clear, I don't write code solely for the purpose of paying rent; but I'd being lying if I said it wasn't one of the main reasons.
+
+If you're worried too, stay tuned, because in making analogies to the Industrial Revolution I see 2 options: 1.
+Embrace what new skills and knowledge will be valued 2.
+Turn away from the changes and toward experience, judgement, and being held responsible for risk
