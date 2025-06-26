@@ -1,7 +1,7 @@
 ---
 title: Is the best bike safety policy actually a car policy?
 author: corey
-date: 2025-05-04
+date: 2025-06-06
 categories:
   - cycling
   - urbanism

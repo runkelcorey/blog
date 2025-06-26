@@ -1,0 +1,145 @@
+---
+title: How New England is the Fluffernutter?
+author: corey
+date: 2025-06-10
+categories:
+  - R
+  - New England
+editor_options: 
+  markdown: 
+    wrap: sentence
+from: markdown+emoji
+draft: true
+---
+
+When I moved to Cambridge, I had never heard of the Fluffernutter.
+If you don't know what it is, thank you, I take comfort in that.
+The Fluffernutter is:
+
+- 1 part marshmallow creme
+- 1 part peanut butter
+- 2 parts bread
+
+```{=html}
+<a title="Keitei, CC BY-SA 3.0 &lt;http://creativecommons.org/licenses/by-sa/3.0/&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Fluffernutter_before.jpg"><img width="512" alt="Fluffernutter before" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Fluffernutter_before.jpg/512px-Fluffernutter_before.jpg?20061028213338"></a>
+```
+
+
+Folks around here take great pride in this sticky sandwich, for [an enterprising woman created the Fluffernutter here in the 1910s](https://en.wikipedia.org/wiki/Fluffernutter#History).
+Here, the Fluffernutter recipe is slightly more specific:
+
+- 1 part Marshmallow Fluff
+- 1 part Teddie's Peanut Butter
+- 2 parts bread
+
+![Marshmallow Fluff and Teddie's Peanut Butter](https://sarahwormannart.com/cdn/shop/files/fluffernuttercardart.jpg)
+
+Both of these ingredients are still manufactured less than 10 miles from my home in Cambridge.
+Peoples' allegiances run so deep that Somerville hosts an annual Fluff Festival to celebrate the local legend.
+
+As for me, I had my first Fluffernutter---the canonical recipe, of course---a mere 2 weeks ago.
+Growing up, I never heard of the delicacy, but the fun design of the Marshmallow Fluff logo and the superiority of Teddie's Peanut Butter convinced me to give it a try.
+It's a great snack, a filling snack, and, like all great snacks, it's remixable; if you want more substance, just add banana slices; if you want luxury, spread on some nutella; if you want insanity, [add pickles](https://mubi.com/en/us/films/pb-p).
+
+Since I tried it, I have asked friends and family and coworkers where they grew up and when/if they had heard of a Fluffernutter.
+Here were the results by childhood home:
+
+- Ohio: 1 yes
+- Virginia: 3 Nos
+- California: 1 yes
+- Oregon: 1 no
+- New York: 1 no
+- Ontario: 1 yes
+- Massachusetts: 4 yes
+
+Clearly Bay Staters know their fluff but the rest of the country is a mixed bag.
+
+::: {.column-margin}
+This is, [in fact](https://malegislature.gov/Laws/GeneralLaws/PartI/TitleI/Chapter2/Section35), our official demonym. I don't hate it but it feels like giving up.
+:::
+
+I'm troubled without patterns to guide my mental model building, so I'm going to answer the question: how New England is the Fluffernutter sandwich?
+Had I vast survey resources at my disposal, this would be trivial.
+I would simply measure how many people per capita think about a Fluffernutter each day and check if the:
+
+1. New England average is higher than the rest of the country; if this isn't true, then the Fluffernutter is not a regional specialty.
+
+::: {.column-margin}
+$$
+\mu_{New England} > \mu_{US\ exc.\ New England}
+$$ {#eq-1}
+:::
+
+2. intra--New England variance is lower than the rest of the country combined
+
+::: {.column-margin}
+$$
+\frac{\sum(x_s - \mu_{NE})^2}{n-1} < \frac{\sum(x_s - \mu_{US})^2}{n-1}
+$$ {#eq-2}
+:::
+
+If 1 is true but not 2, then we conclude that the Fluffernutter may be a Massachusetts thing but not a New England thing; rather, its popularity may radiate out from Boston rather than be spread, creamily, around the region.
+
+Alas, I do not have vast survey resources at my disposal.
+What can I measure to proxy Fluffernutter demand?
+Sales of peanut butter and specifically marshmallow creme are hard to find, so that's out.
+What if I tried to take the [*New York Times*' Thanksgiving specialty route]() and use Google searches?
+The *Times* measured the per capita rate of searches for different Thanksgiving side dishes and compared them to see which occurred above the national average.
+
+This problem is a bit different than Thanksgiving side dishes because of the simplicity of the recipe.
+People searching for `green bean casserole` or `frog-eye salad` are likely searching for a recipe for a dish they cook once a year.
+The Fluffernutter spells out the recipe in its name (assuming you know what marshmallow fluff is).
+I suspect that searches for `fluffernutter` would actually be by people who want to know what it is rather than those who know what it is.
+Honestly, this problem makes Google search metrics a poor way to measure Fluffernutter demand but what else can I try?
+
+::: {.callout-note}
+I actually stopped here and asked Copilot for some help:
+
+*I want to measure how familiar people are with the Fluffernutter sandwich. What are some publicly available datasets that may help answer this question?*
+
+>Here are some publicly available datasets and data sources you could use to estimate familiarity with the Fluffernutter sandwich:
+>
+>1. Google Trends: lets you compare the popularity of search terms like "fluffernutter" by region and over time. You can export the data for analysis.
+>
+>2. Twitter/X API or Academic Research: Search for tweets mentioning "fluffernutter" and analyze their geographic metadata (if available). The Twitter API or datasets from Academic Research can help.
+>
+>3. Reddit Data: Use Pushshift Reddit Dataset or Reddit API to search for posts/comments mentioning "fluffernutter" and analyze subreddit/geographic context.
+>
+>4. Google Books: Ngram Viewer can show the frequency of "fluffernutter" in published books over time, which may indicate cultural familiarity.
+>
+>5. Survey Data: The General Social Survey (GSS) or Pew Research Center sometimes include food/culture questions, though "fluffernutter" is unlikely to be directly mentioned. You could look for broader food familiarity questions.
+>
+>6. YouGov or Statista sometimes publish survey results about food preferences and regional specialties.
+>
+>7. Google Books/Scholar, News Archives: Search for regional mentions in news archives or Google Scholar for academic studies on regional foods.
+>
+>8. Wikipedia Pageviews: Wikimedia REST API can provide pageview stats for the "Fluffernutter" article, which can be broken down by country.
+:::
+
+On a lark, I tried some options besides Google Trends:
+
+- Wikipedia, my darling, only breaks stats down to the country-level.
+- Reddit requires being a moderator to use
+- Twitter doesn't even have an Academic Research access level anymore 😬
+
+Google Books' Ngrams did yield some insight into the fluffernutter's spread.
+In addition to `fluffernutter`, I searched `liberty sandwich` in reference to its origins.
+Shortly after the original fluffernutter recipe was created, we plunged into World War I;
+
+>Americans were urged to give up meat one day a week. Peanut butter and fluff sandwiches, cut into dainty shapes, made a virtue out of necessity.
+>
+>What this means is that Melrose may very well be the birthplace of the what later came to be known as the Fluffernutter sandwich.
+>
+>--[*The Melrose Mirror*](https://web.archive.org/web/20171102063239/http://melrosemirror.media.mit.edu/servlet/pluto?state=303034706167653030375765625061676530303269643030353133343838)
+
+Sure enough, mentions of `liberty sandwich` predate `fluffernutter` and find their first usage around the start of World War I.
+
+```{=html}
+<iframe name="ngram_chart" src="https://books.google.com/ngrams/interactive_chart?content=fluffernutter,liberty+sandwich&year_start=1800&year_end=2022&corpus=en&smoothing=3" width=900 height=500 marginwidth=0 marginheight=0 hspace=0 vspace=0 frameborder=0 scrolling=no></iframe>
+```
+
+As I expected, the Google Trends data was the best.
+Using it, I could break searches down below the state level into the metro level.
+Beyond satisfying my interest in defining New England according to [the Federal Reserve district](https://upload.wikimedia.org/wikipedia/commons/d/d5/Boston_Fed_map.png)---which I hold is the most accurate definition of the region---disaggregating data to the metro level allows us to see past trends at the state level.
+
+Google allows us to download the results as a 
