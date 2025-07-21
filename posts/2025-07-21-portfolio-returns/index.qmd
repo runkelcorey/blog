@@ -1,0 +1,35 @@
+---
+title: A 5-year review of my retirement portfolio
+subtitle: "#2"
+author: corey
+date: 2025-07-21
+categories:
+  - economics
+  - work
+editor_options: 
+  markdown: 
+    wrap: sentence
+execute:
+  warning: false
+from: markdown+emoji
+draft: true
+---
+
+As I mentioned in [my last post](../2025-07-20-holdings-performance/index.qmd), I'd like to incorporate the expenses of each ETF and simulate the absolute returns given sample investments:
+I'll pretend I invested \$1,000 in my taxable brokerage account in May 2020 and \$10,000 in my Roth IRA in June 2022, when I moved to Cambridge.
+I'll also take out the expense ratios for each investment but not account for taxes since the account determines that, not my holdings.
+Then, I'll compare that to investing the same amounts in `$VTI`.
+
+#
+
+Now, as I start a new job, I'll be a contractor without any 401(k) or retirement match.
+All of my retirement money will come under my personal control.
+Plus, I want my non-retirement money to start doing more and soon: Claire and I are talking about a home and kids and a car and grad school and, suddenly, I'm no longer looking at 2065 as the first date I'll realize investment gains.
+
+As I survey the options, I can't justify my ESG investments on their goals anymore.
+I'm less the idealist and more the economist: even if I disinvested from carbon and strike-breakers and Israel, someone else will gladly pick up those assets on the cheap and fund them anyway.
+So long as others invest "rationally", I need to to in order to feel like I'm making optimal decisions.
+Additionally, I feel the postmodern urge that, so long as I participate in the market, I won't be more than a step away from carbon and strike-breakers and Israel.
+`$NVDA`, the largest component of `$ESGU`, extracts lots of metals for its chips, while `$AAPL` is still deeply invested in Foxconn, where labor conditions are far from my ideal of dignity.
+
+I'm sad I'm growing pessimistic but I do think that choosing investments based on my ideals has greater effect on my conscience than on people's lives and our planet's health.
