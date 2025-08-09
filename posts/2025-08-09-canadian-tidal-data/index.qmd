@@ -1,0 +1,301 @@
+---
+title: Evaluating Canadian tidal data
+author: corey
+date: 2025-08-09
+categories:
+  - R
+  - floatingtrails
+  - kayaking
+editor_options: 
+  markdown: 
+    wrap: sentence
+from: markdown+emoji
+draft: true
+---
+
+A few weeks ago, I reached out to the maintainer of [Floating Trails](https://floatingtrails.com/42.36384/-71.03889/15?m.0.ll=41.51794+-70.67996&m.0.c=%2300FF00&du=n), a free website for ocean-going paddlers that allows users to view nautical charts and campsites for the US and Canadian coastline.
+I asked to help contribute and he agreed; his first interest was adding tidal predictions for the Canadian coastline.
+Floating Trails offers water-level, current speed, and current direction predictions in the US for every 15 minutes and the first task for integrating Canadian data was unerstanding whether coverage for Canadian tidal stations was comparable.
+
+# The Canadian Hydrographic Service
+
+CHS operates tidal stations in the Atlantic, Pacific, and Arctic Oceans in addition to the St. Lawrence river.
+::: {.column-margin}
+The St. Lawrence, with its funnel shape and shallow depth, makes for intense tides.
+:::
+Each station include at least one of:
+
+-   buoy
+-   ground tackle
+-   current meters
+-   radio transmitter
+-   recording mechanism
+
+CHS provides a REST API for these stations and [decent documentation](https://api.iwls-sine.azure.cloud-nuage.dfo-mpo.gc.ca/swagger-ui/index.html#/) of each endpoint.
+
+# What tidal data does each station offer?
+
+We can query metadata about stations by pinging the `stations/{stationId}/metadata` endpoint.
+I'm using `httr2` to perform and interpret each request and---of course---`tidyverse`:
+```{r}
+library(tidyverse)
+library(httr2)
+
+base_url <- "https://api.iwls-sine.azure.cloud-nuage.dfo-mpo.gc.ca" |>
+    request() |>
+    req_url_path_append("api/v1") |>
+    req_user_agent("floatingtrails.dev") |>
+    req_headers(accept = "application/json")
+```
+
+Using this API path, we can fetch metadata for the `St. Lawrence` station:
+
+```{r}
+#| code-overflow: wrap
+base_url |>
+    req_url_path_append("stations/5cebf1e13d0f4a073c4bbeb9/metadata") |>
+    req_perform() |>
+    resp_body_string()
+```
+
+This fetch gets us:
+
+-   `lat`
+-   `lng`
+-   `station` (code)
+-   `id`
+-   `name`
+-   `timeZoneId`
+-   `depth`
+
+Frustratingly, [the API documentation](https://api.iwls-sine.azure.cloud-nuage.dfo-mpo.gc.ca/swagger-ui/index.html#/station%20metadata) lists fields that are important for tidal data but are not populated:
+
+-   `[highestHigh|lowestLow]WaterTimeDifference`
+-   `[flood|ebb]direction`
+
+It turns out that currents are only predicted at a few stations---less than 10---around Canada. Those stations, such as `Abegweit Passage`, include the flood and ebb direction as well as predictions throughout the day.
+
+The CHS API does add `tideTypeCode`, which designates the tide at that station as one of:
+
+::: {.column-margin}
+More information at [CHS' website](https://tides.gc.ca/en/definitions-content-tides-and-currents).
+:::
+
+-   **s**emi-**d**iurnal
+-   **m**ainly **s**emi-**d**iurnal
+-   **m**ainly **d**iurnal
+-   **d**iurnal
+
+Now we know about what kind of information we can learn about each station but we don't know which stations exist!
+
+# Where are tidal stations located?
+
+After querying this API a few times, I noticed that some stations are not currently operating.
+To filter these stations, I chose stations with future timestamps but without specifying any time-series codes.
+::: {.column-margin}
+Each `timeSeriesCode` corresponds to a different type of data, such as `wlp` for water-level predictions and `wlo` for water-level observations.
+:::
+
+Let's get these stations as a dataframe for further visualization:
+```{r}
+all_stations <- base_url |>
+    req_url_path_append("stations") |>
+    req_url_query(!!!list(
+        dateStart = "2025-08-01T00:00:00Z",
+        dateEnd = "2025-08-09T23:59:59Z"
+    )) |>
+    req_perform() |>
+    resp_body_json() |>
+    map(\(x) as_tibble(x)) |>
+    list_rbind() |>
+    unnest_wider(timeSeries, names_sep = "")
+```
+
+These data have abbreviated info about each station, plus information about the time series they offer:
+
+```{r}
+glimpse(all_stations)
+```
+
+To see them a bit more comprehensively, we can visualize them as a tile plot:
+```{r}
+all_stations |>
+    group_by(timeSeriescode) |>
+    mutate(not_null = sum(!is.na(timeSeriescode))) |>
+    ungroup() |>
+    ggplot(aes(reorder(timeSeriescode, not_null, decreasing = T), code, fill = type)) +
+    geom_tile() +
+    scale_y_discrete(labels = NULL) +
+    theme(legend.position = "bottom") +
+    labs(
+        x = "timeSeriesCode",
+        y = "station",
+        title = "Time series offered by station"
+    )
+```
+
+This shows lots of time series. The first section, which is entirely filled in, represents water-level observations.
+This makes sense: each station has equipment for measuring water level.
+The next section which is mostly filled in, contains various time series for water-level predictions: `wlp`;`wlf` for water-level forecasts; and `wlf-spine` for water-level forecasts using the St. Lawrence *prévisions interpolées de niveaux d'eau*.
+The rest of the plot shows secondary measurements (eg. `wl2` for water level at measurement point 2) and water current data.
+
+To get a sense of where we can find water-level predictions, let's map the stations and pull in their relevant time series.
+To do so, we'll use `ggmap` and `ggrepel`:
+
+```{r}
+all_stations |>
+    mutate(timeSeriescode = if_else(timeSeriescode %in% c("wlp", "wlf", "wlf-vtg", "wlf-spine"), timeSeriescode, NA)) |>
+    group_by(officialName, longitude, latitude) |>
+    summarize(predictionCode = first(timeSeriescode, order_by = desc(timeSeriescode))) |>
+    ggplot() +
+    geom_polygon(data = map_data("world", region = "Canada"), aes(x = long, y = lat, group = group, alpha = .1), show.legend = FALSE) +
+    geom_point(
+        aes(x = longitude, y = latitude, color = predictionCode),
+    ) +
+    ggrepel::geom_label_repel(
+        aes(x = longitude, y = latitude, label = officialName, color = predictionCode),
+        max.overlaps = 15,
+        show.legend = FALSE
+    ) +
+    theme(legend.position = "bottom") +
+    labs(color = "Prediction Type", x = NULL, y = NULL, title = "Canadian tidal stations by prediction type")
+```
+
+Using this plot, we may guess that `wlf` is for freshwater, where the tide is more influenced by meterological events than saltwater stations, which are more influenced by [the various components that create an ocean tide](https://tides.gc.ca/en/tidal-phenomena).
+
+# Does each station offer predictions at the 15-minute grain?
+
+Remember our goal is to match the US data with tidal predictions every 15 minutes for all Canadian stations.
+If the data aren't provided then we will need to do some front-end work to accommodate null values or change the user's ability to select lower granularities.
+
+To assess the coverage of 15-minute intervals, I'll write a function that will take arguments from the data frame and build a URL to query the API.
+Then, I'll query each station using that function and extract the results as a data frame for further analysis.
+
+## Constructing the set of stations
+
+First, I'll filter to the stations with a listed `timeSeriesCode` among the water-level forecasts and predictions.
+
+## Composing the requests
+
+To make requests appropriately, we need to mind the API's query limits.
+CHS states that
+>Limits on Requests per client (IP):
+>- Up to 3 requests per second
+>- Up to 30 requests per minute
+>
+>Limits on data per request:
+>-1 minute data – 1 week
+>-3 minute data – 3 weeks
+>-all other lower resolutions, - 1 month
+>
+>If you receive a 429 error from your request it is likely you may be exceeding 1 or more of these limits. If this is the case, please modify your requests to comply with the limits defined above.
+
+In this case, we can use [`req_throttle`](https://httr2.r-lib.org/reference/req_throttle.html) and set the `capacity` to `30` (per minute).
+
+```{r}
+station_data <- function(timeSeriescode, id) {
+    base_url |>
+    req_url_path_append("stations") |>
+    req_url_path_append(id) |>
+    req_url_path_append("data") |>
+    req_url_query(!!!list(
+        `time-series-code` = timeSeriescode, # water-level predictions
+        from = "2025-08-11T00:00:00Z",
+        to = "2025-08-12T05:00:00Z",
+        resolution = "FIFTEEN_MINUTES"
+    )) |>
+    req_throttle(capacity = 30)
+}
+```
+
+Usually, if I were writing a function, I wouldn't hardcode what the user may want to change; I'd leave `from`, `to`, and `resolution` undefined so that users could specify how they'd like.
+In this case, I decided to hardcode them to make the next bit easier.
+`purrr::pmap` takes a dataframe and performs the function on each row, filling arguments by matching names from the function signature to column names in the dataframe.
+
+```{r}
+requests <- all_stations |>
+    filter(timeSeriescode %in% c("wlp", "wlf", "wlf-spine")) |>
+    select(
+        id,
+        timeSeriescode
+    ) |>
+    pmap(station_data)
+```
+
+We now have a list of `httr2_request`s.
+Here are the first 2 elements:
+```{r}
+requests[1:2]
+```
+
+Since we specified how to throttle requests for each request, we can now parallelize their execution.
+If any of them error out---for instance, if this breaks the API's request limit despite the documentation or if any time series are not available even though they were returned by the `stations` endpoint---I'd like to know but also continue the requests.
+
+```{r}
+responses <- requests |>
+    req_perform_parallel(on_error = "continue")
+```
+
+## Extract predictions
+This returns a list of HTML responses.
+Instead of extracting the data we need from the body, I left this object in memory so that I could work on different ways to extract it.
+`purrr::map` applies functions across a list and returns the same list back, making its output format stable.
+As much as I like working with dataframes, keeping the data structure nested avoids multiplying the size of the data.
+For this code block, I commented each line to explain what it does:
+
+```{r}
+tidal_data <- responses |>
+    map(resp_body_json) |> # extract body of response, assuming JSON
+    map_depth(.depth = 2, .f = as_tibble_row) |> # convert each element into a list of dataframe rows
+    map(list_rbind) |> # bind the list of dataframe rows into a single dataframe for each element
+    set_names(map(fifteen_minutes, "url")) |> # name each element according to its url
+    list_rbind(names_to = "url") |> # reduce the list of dataframes into a single dataframe with url as a column
+    mutate(
+        id = str_split_i(url, "/", 7), # extract station ID
+        time_series_code = str_split_i(url, "=|&", 2), # extract time-series code
+        eventDate = as_datetime(eventDate) # parse datetime
+    )
+```
+
+## Visualize predictions for each station
+Let's look at this first by time-series code so that we can see which time series offer the most stations for each 15-minute block of time.
+It would be great if one time series, like `wlp` offered total coverage:
+
+```{r}
+tidal_data |>
+    group_by(time_series_code, eventDate) |>
+    summarize(observations = n()/nrow(distinct(tidal_data, id))) |>
+    ggplot() +
+    aes(x = eventDate, y = time_series_code, fill = observations) +
+    geom_tile(color = "gray70") +
+    scale_fill_continuous(labels = scales::percent, limits = c(0, 1)) +
+    scale_x_datetime(date_labels = "%H%p", date_minor_breaks = "1 hour") +
+    labs(x = "Timestamp (August 6-7, 2025)", y = "Time-series code", fill = "% of stations\nreporting") +
+    theme(legend.position = "bottom")
+```
+
+Okay, so none of them have 100% coverage.
+But *between* `wlp`, `wlf`, and `wlf-spine`, can we get predictions for every station?
+To answer this, let's visualize how many time series are available for each 15-minute block.
+If any stations are totally null, we'll see that, too.
+
+```{r}
+tidal_data |>
+    filter(!is.na(value)) |>
+    group_by(id, eventDate) |>
+    summarize(series_count = n()) |>
+    ggplot() +
+    aes(x = eventDate, y = id, fill = not_null) +
+    geom_tile(color = "gray70") +
+    scale_fill_discrete() +
+    scale_x_datetime(date_labels = "%H%p", date_minor_breaks = "1 hour") +
+    labs(x = "Timestamp (August 6-7, 2025)", y = "Station") +
+    theme(legend.position = "bottom", axis.text.y = element_blank())
+```
+
+Voila---for each station, for every 15 minutes, a prediction.
+
+Next questions:
+1. What about current speed and direction?
+2. How far ahead can we query each dataset?
+3. When should we use `wlf` versus `wlp`?
