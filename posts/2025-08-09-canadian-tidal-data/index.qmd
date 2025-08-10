@@ -10,7 +10,10 @@ editor_options:
   markdown: 
     wrap: sentence
 from: markdown+emoji
-draft: true
+draft: false
+execute:
+  cache: true
+  warning: false
 ---
 
 A few weeks ago, I reached out to the maintainer of [Floating Trails](https://floatingtrails.com/42.36384/-71.03889/15?m.0.ll=41.51794+-70.67996&m.0.c=%2300FF00&du=n), a free website for ocean-going paddlers that allows users to view nautical charts and campsites for the US and Canadian coastline.
@@ -20,6 +23,7 @@ Floating Trails offers water-level, current speed, and current direction predict
 # The Canadian Hydrographic Service
 
 CHS operates tidal stations in the Atlantic, Pacific, and Arctic Oceans in addition to the St. Lawrence river.
+
 ::: {.column-margin}
 The St. Lawrence, with its funnel shape and shallow depth, makes for intense tides.
 :::
@@ -51,7 +55,7 @@ base_url <- "https://api.iwls-sine.azure.cloud-nuage.dfo-mpo.gc.ca" |>
 Using this API path, we can fetch metadata for the `St. Lawrence` station:
 
 ```{r}
-#| code-overflow: wrap
+#| output: asis
 base_url |>
     req_url_path_append("stations/5cebf1e13d0f4a073c4bbeb9/metadata") |>
     req_perform() |>
@@ -225,6 +229,7 @@ requests <- all_stations |>
 We now have a list of `httr2_request`s.
 Here are the first 2 elements:
 ```{r}
+#| warning: true
 requests[1:2]
 ```
 
@@ -248,7 +253,7 @@ tidal_data <- responses |>
     map(resp_body_json) |> # extract body of response, assuming JSON
     map_depth(.depth = 2, .f = as_tibble_row) |> # convert each element into a list of dataframe rows
     map(list_rbind) |> # bind the list of dataframe rows into a single dataframe for each element
-    set_names(map(fifteen_minutes, "url")) |> # name each element according to its url
+    set_names(map(responses, "url")) |> # name each element according to its url
     list_rbind(names_to = "url") |> # reduce the list of dataframes into a single dataframe with url as a column
     mutate(
         id = str_split_i(url, "/", 7), # extract station ID
@@ -270,7 +275,7 @@ tidal_data |>
     geom_tile(color = "gray70") +
     scale_fill_continuous(labels = scales::percent, limits = c(0, 1)) +
     scale_x_datetime(date_labels = "%H%p", date_minor_breaks = "1 hour") +
-    labs(x = "Timestamp (August 6-7, 2025)", y = "Time-series code", fill = "% of stations\nreporting") +
+    labs(x = "Timestamp (August 11-12, 2025)", y = "Time-series code", fill = "% of stations\nreporting") +
     theme(legend.position = "bottom")
 ```
 
@@ -285,17 +290,17 @@ tidal_data |>
     group_by(id, eventDate) |>
     summarize(series_count = n()) |>
     ggplot() +
-    aes(x = eventDate, y = id, fill = not_null) +
+    aes(x = eventDate, y = id, fill = series_count) +
     geom_tile(color = "gray70") +
-    scale_fill_discrete() +
     scale_x_datetime(date_labels = "%H%p", date_minor_breaks = "1 hour") +
-    labs(x = "Timestamp (August 6-7, 2025)", y = "Station") +
+    labs(x = "Timestamp (August 11-12, 2025)", y = "Station") +
     theme(legend.position = "bottom", axis.text.y = element_blank())
 ```
 
 Voila---for each station, for every 15 minutes, a prediction.
 
 Next questions:
+
 1. What about current speed and direction?
 2. How far ahead can we query each dataset?
 3. When should we use `wlf` versus `wlp`?
