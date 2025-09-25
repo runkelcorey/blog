@@ -1,0 +1,46 @@
+---
+title: "N-1 bikes"
+author: corey
+date: 2025-09-25
+categories:
+  - cycling
+editor_options: 
+  markdown: 
+    wrap: sentence
+from: markdown+emoji
+draft: false
+---
+
+The bike I hoped I'd have forever is up for sale.
+I bought this as a rolling frameset in 2023, excited to find a titanium frame I could afford in my 20s.
+I swapped the cantis by searching Reddit for "best brakes for canti posts" and purchased the first pair of Paul Minimotos I saw.
+Only when I went to install them did I learn that I could have 90% of the performance for 10% of the price.
+
+I spent longer on other components.
+The pedals I found after a similar search---but with a lot more satisfaction---as high end flat pedals are still only \$50.
+The wheelset came from Marketplace, that home for idle time.
+I was looking for a lightweight rim-brake 700c wheelset that could take an 11-speed cassette and fit a 40mm tire.
+I easily could have dropped \$600 on a new set or \$300 on an old pair.
+Instead, I scrounged and spend \$100 on the wheels and another \$40 on the tires!
+
+Swapping parts meant learning a lot of foundational bike skills, from installing brakes to wrapping bars to measuring parts for clearances.
+As my coworker Will foretold, this bike did become a "GRAVEL RIPPER", leading me into the Middlesex Fells, up the spine of Vermont's Green Mountains, through 100 miles of crisp November air, and over the rooty, rocky walking trails that mark the area north of Cambridge.
+
+So, why am I selling it?
+It wasn't the frame material: titanium looks beautiful and was lighter loaded for bikepacking than my companions' bikes were unloaded.
+When I needed to lock it outside I didn't fear for rust or chipping paint since the frame was totally raw aside from a downtube decal.
+
+Unfortunately, I felt stretched out on the frame from day 1.
+I measured the bike recently and still can't figure out why since the dimensions are so close to the Wester Ross.
+But when riding, I always slipped to the flats of the bars or the drops; the brake hoods were never comfortable for more than a few miles.
+And when I was decided to bail out of intimidating singletrack, I'd jump off and often smack right into the top tube in the most vulnerable of ways.
+Last, I couldn't pedal this bike through turns---at least not comfortably.
+The toe overlap may have been fixable with smaller pedals or a shorter crank or a better rim-tire match but it would always be a little *too* close.
+
+Fit was the dealbreaker, the other issues were just tradeoffs in service of coolness:
+the cyclocross figure cut as few mount points as my Wester Ross;
+the mini-Vs could not fit fenders and 40mm tires;
+the steel fork (and maybe the stem-bars combination) felt suprisingly brittle under my hands.
+I think much of these could have been fixed with some upgrades but I realized---lying awake with a splitting headache at 10,000 feet a few weeks back---that fixing these compromises would be pointless if the bike was the same size.
+
+Stay tuned to hear about my ideas for the next bike.
