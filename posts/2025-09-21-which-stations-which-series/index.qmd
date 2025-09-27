@@ -1,0 +1,148 @@
+---
+title: Which stations, which series?
+author: corey
+date: 2025-09-27
+categories:
+  - python
+  - floatingtrails
+  - kayaking
+editor_options: 
+  markdown: 
+    wrap: sentence
+from: markdown+emoji
+draft: false
+execute:
+  warning: false
+---
+
+We saw in [my previous post](../2025-08-09-canadian-tidal-data/index.qmd) how to get tidal data for Canadian stations and the coverage for those stations.
+Now, I want to step further by plotting stations and their provided series interactively.
+While my previous work was in R to leverage its declarative API syntax, I'm switching to Python since this will ultimately need to integrate in the `floatingtrails` codebase.
+
+```{python}
+import geopandas as gpd
+import folium
+from datetime import date
+from requests import Request
+from requests.sessions import Session
+```
+
+Before we hit this API, we need to construct a base URL.
+In R's `httr2` library, this looked like
+
+```{raw}
+#| eval: false
+request <- "https://api.iwls-sine.azure.cloud-nuage.dfo-mpo.gc.ca" |>
+    request() |>
+    req_url_path_append("api/v1") |>
+    req_user_agent("floatingtrails.dev") |>
+    req_headers(accept = "application/json") |>
+    req_url_path_append("stations") |>
+    req_url_query(!!!list(
+        dateStart = "2025-08-01T00:00:00Z",
+        dateEnd = "2025-08-09T23:59:59Z"
+    ))
+```
+
+In Python's `requests` library, we can't quite do this.
+Everything needs to be defined up front, though we can prepare it before sending.
+To get the station positions, names, and series, we need to fetch data from the `stations` path.
+
+```{python}
+base_request = (
+    Request(
+        method = "GET",
+        url = "https://api.iwls-sine.azure.cloud-nuage.dfo-mpo.gc.ca/api/v1/stations",
+        headers = {
+            "user-agent": "floatingtrails.dev",
+            "accept": "application/json"
+        },
+        params = {
+            "dateStart": date.today().isoformat() + "T00:00:00Z",
+        }
+    ).prepare()
+)
+```
+
+Now, we can send this request using a `Session`, which will return a `Response` object that we can parse as JSON.
+
+```{python}
+with Session() as session:
+    response = session.send(base_request)
+    station_list = response.json()
+    session.close()
+```
+
+GeoPandas will read the JSON and, bada bing bada boom, we have a GeoDataFrame.
+
+```{python}
+stations = gpd.GeoDataFrame(station_list)
+```
+
+GeoPandas' API doesn't give an elegant way to define the geometry, so we'll add that in a separate step.
+
+```{python}
+stations_gpd = (
+    stations
+    .set_geometry(
+        gpd.points_from_xy(stations.longitude, stations.latitude),
+        crs = "EPSG:3348" # NAD83 / Statistics Canada
+    )
+    .drop(["latitude", "longitude"], axis = 1)
+)
+```
+
+For floatingtrails, we're only interested in water level and water current predictions so we'll filter to those in the `timeSeries` column.
+
+```{python}
+stations_gpd["series_codes"] = stations_gpd.apply(
+    lambda row: ",".join([
+        i['code'] for i in row['timeSeries'] if i['code'] in [
+            'wlp', # water-level predictions
+            'wlp-hilo', # high and low tide predictions
+            'wlf', # water-level forecasts
+            'wlf-spine', # water-level forecasts along the St Lawrence River
+            'wcd1', # current direction predictions
+            'wcs1' # current speed predictions
+        ]]), axis = 1
+    )
+```
+
+::: {.callout-note, title = "confession"}
+I really hate how hard it is to chain together Pandas expressions.
+I read about imperative vs declarative programming recently and really see how Python encourage imperative operations at the expense of readability and elegance.
+:::
+
+We'll store this dataset as a GeoJSON for y'all to browse...
+
+```{python}
+gj = stations_gpd.to_json()
+with open("canadian_tidal_stations.geojson", "w") as f:
+    f.write(gj)
+```
+
+... and then read it back in to plot.
+
+```{python}
+map = folium.Map(location = [61, -96], zoom_start = 2, tiles = "CartoDB Positron")
+
+folium.GeoJson(
+    gj,
+    name = "Canadian Tidal Stations",
+    marker = folium.CircleMarker(
+        radius = 3,
+        color = "black",
+        fill_color = "orange",
+        fill_opacity = .4,
+        weight = .5
+    ),
+    tooltip = folium.GeoJsonTooltip(
+        fields = ["officialName", "code", "series_codes"],
+        aliases = ["Station Name", "Station Code", "Provided Series"],
+        localize = True
+    ),
+    highlight_function = lambda x: {"fillOpacity": 1, "weight": 1}
+).add_to(map)
+
+map
+```
