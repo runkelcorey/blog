@@ -31,7 +31,6 @@ Before we hit this API, we need to construct a base URL.
 In R's `httr2` library, this looked like
 
 ```{raw}
-#| eval: false
 request <- "https://api.iwls-sine.azure.cloud-nuage.dfo-mpo.gc.ca" |>
     request() |>
     req_url_path_append("api/v1") |>
@@ -108,16 +107,17 @@ stations_gpd["series_codes"] = stations_gpd.apply(
     )
 ```
 
-::: {.callout-note, title = "confession"}
+::: {.callout-note}
+# confession
 I really hate how hard it is to chain together Pandas expressions.
 I read about imperative vs declarative programming recently and really see how Python encourage imperative operations at the expense of readability and elegance.
 :::
 
-We'll store this dataset as a GeoJSON for y'all to browse...
+We'll store this dataset as [a GeoJSON for y'all to browse](data/canadian_tidal_stations.geojson)...
 
 ```{python}
 gj = stations_gpd.to_json()
-with open("canadian_tidal_stations.geojson", "w") as f:
+with open("data/canadian_tidal_stations.geojson", "w") as f:
     f.write(gj)
 ```
 
