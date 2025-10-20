@@ -1,0 +1,178 @@
+---
+title: Reconciling Canadian and American tidal stations and predictions
+author: corey
+date: 2025-10-19
+categories:
+  - python
+  - floatingtrails
+  - kayaking
+editor_options: 
+  markdown: 
+    wrap: sentence
+from: markdown+emoji
+draft: false
+execute:
+  warning: false
+format:
+  html:
+    mermaid:
+      theme: neutral
+---
+
+[floatingtrails](https://floatingtrails.com) stores tidal predictions and station data in a SQLite database.
+
+```{python}
+from pathlib import Path
+import pandas as pd
+import sqlite3
+
+conn = sqlite3.connect(Path.home().joinpath("Documents/paddling-charts/tidegen/tides/data/tides.db"))
+```
+
+The database only has 2 tables:
+
+```{python}
+pd.read_sql_query("SELECT name FROM sqlite_master WHERE type='table';", conn)
+```
+
+In this post, I want to fill the `stations` table with information from Canadian tidal stations but Canadian stations lack some of the attributes that American stations have and require different attributes than do American stations.
+
+To illustrate, here's a sample of the stations table:
+
+```{python}
+pd.read_sql_query("SELECT * FROM STATIONS LIMIT 1;", conn)
+```
+
+Meanwhile, a sample Canadian station "looks" like this:
+
+```{python}
+from datetime import date
+import requests
+
+st_lawrence = requests.get("https://api.iwls-sine.azure.cloud-nuage.dfo-mpo.gc.ca/api/v1/stations/5cebf1e13d0f4a073c4bbeb9/metadata").json()
+
+st_lawrence
+```
+
+There is a basic intersection here in the fields that identify the stations in their countries' respective systems and locate the stations, but Canadian stations don't use time adjustment fields such as `maxTimeAdj` and `minTimeAdj` that are required to interpolate tidal predictions for most US tidal stations.
+
+To reconcile these differences, I want to change the schema to co-locate the shared fields and separate the country-specific information.
+Our starting point is the current state of the database schema:
+```{mermaid}
+erDiagram
+    STATIONS ||--|{ PREDICTIONS : has
+    STATIONS {
+        text station
+        real lat
+        real lng
+        text id
+        text bin
+        text name
+        integer flags
+        text refStation
+        text timeZoneId
+        text timeZoneUTC
+        real maxTimeAdj
+        real minTimeAdj
+        real maxValueAdj
+        real minValueAdj
+        real risingZeroTimeAdj
+        real fallingZeroTimeAdj
+        real depth
+        text depthType
+        real meanFloodDir
+        real meanEbbDir
+    }
+    PREDICTIONS {
+        text station
+        text time
+        integer flags
+        real depth
+        real value
+        real magnitude
+        real dir
+    }
+```
+
+The first change I want to make is to distill the `stations` table to its essential identifying and geographic fields.
+My one addition will be to include the [ISO-3] `countryCode`, such as `CAN` or `USA`.
+
+```{mermaid}
+erDiagram
+    STATIONS ||--|{ PREDICTIONS : has
+    STATIONS {
+        text station PK
+        text countryCode PK
+        real lat
+        real lng
+        text id
+        text bin
+        text name
+        integer flags
+        text refStation
+        text timeZoneId
+        text timeZoneUTC
+        real depth
+        text depthType
+    }
+    PREDICTIONS {
+        text station PK
+        text countryCode PK
+        text time PK
+        integer flags
+        real depth
+        real value
+        real magnitude
+        real dir
+    }
+```
+
+However, this loses some information that's necessary to calculate high-granularity tidal predictions for substations, so I'll refactor the time adjustment information to its own, NOAA-specific table.
+
+```{mermaid}
+erDiagram
+    STATIONS ||--|{ PREDICTIONS : has
+    STATIONS ||--o{ TIME_ADJUSTMENTS : has
+    STATIONS {
+        text station PK
+        text countryCode PK
+        real lat
+        real lng
+        text id
+        text bin
+        text name
+        integer flags
+        text timeZoneId
+        text timeZoneUTC
+        real depth
+        text depthType
+    }
+    PREDICTIONS {
+        text station PK
+        text countryCode PK
+        text time
+        integer flags
+        real depth
+        real value
+        real magnitude
+        real dir
+    }
+    TIME_ADJUSTMENTS {
+        text station PK
+        text countryCode PK
+        text refStation
+        real maxTimeAdj
+        real minTimeAdj
+        real maxValueAdj
+        real minValueAdj
+        real risingZeroTimeAdj
+        real fallingZeroTimeAdj
+    }
+```
+
+2 things to note:
+
+1. I'm not totally certain that the rising and falling zero time adjustments actually help calculate tides, so I may drop those later.
+2. `TIME_ADJUSTMENTS` uses a different node type than `PREDICTIONS` because not all stations have time adjustments; a round join indicates 0 or more related records, while a crow's foot indicates 1 or more related records.
+
+My next post will focus on updating the `PREDICTIONS` table to assimilate Canadian tidal predictions.
